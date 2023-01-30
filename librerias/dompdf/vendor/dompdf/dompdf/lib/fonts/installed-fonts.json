@@ -1,0 +1,23 @@
+{
+    "montserrat-semibold": {
+        "normal": "montserrat_semibold_normal_942024287e1dee710e4724b4b833d028"
+    },
+    "montserrat-medium": {
+        "normal": "montserrat_medium_normal_98bac942c80c6863ef92b8a64c195eea"
+    },
+    "montserrat-regular": {
+        "normal": "montserrat_regular_normal_cf7dd6d9f69cdc700d1a95a9a785645e"
+    },
+    "montserrat-bold": {
+        "normal": "montserrat_bold_normal_6111d2f44a04685c79b516c4ef0b7372"
+    },
+    "poppins": {
+        "300": "C:\\xampp\\htdocs\\pd\\librerias\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/poppins_300_999a4088f0da952988730996a4bec1d8",
+        "normal": "C:\\xampp\\htdocs\\pd\\librerias\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/poppins_normal_ee697d7869cb745ccf3ccccc013145ad",
+        "500": "C:\\xampp\\htdocs\\pd\\librerias\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/poppins_500_fce53b208cddccda1573b7620b579598",
+        "600": "C:\\xampp\\htdocs\\pd\\librerias\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/poppins_600_9623fbc18c38938c2057a9aae8390a42",
+        "bold": "C:\\xampp\\htdocs\\pd\\librerias\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/poppins_bold_8fe618268f56b4b8f1e70e87a9e99fc0",
+        "800": "C:\\xampp\\htdocs\\pd\\librerias\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/poppins_800_ef86a7722c08a791e114b6649bbd6ae4",
+        "900": "poppins_900_c60a07be40ef8f258a248a492dd87245"
+    }
+}
