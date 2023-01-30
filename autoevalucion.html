@@ -1,0 +1,2164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Reporte</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/5.15.4/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/sty.css">
+    <link rel="stylesheet" href="style_two.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <script src="js/html2pdf.bundle.min.js"></script>
+    <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
+    <script src="js/script.js"></script>
+
+  </head>
+  <body>
+	
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="https://www.iadb.org/es" target="_blank"
+        ><img
+          class="imagen-logo"
+          src="images/logos-es-b-corte.png"
+          alt=""
+          class="mt-2"
+      /></a>
+
+      <a class="navbar-brand" href="#">
+        <div
+          style="
+            background-color: rgb(253, 74, 73);
+            width: 2px;
+            height: 33px;
+            position: relative;
+          "
+        ></div>
+      </a>
+
+      <a class="navbar-brand" href="https://public.digital/" target="_blank"
+        ><svg
+          width="80px"
+          viewBox="0 0 109 58"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Public Digital</title>
+          <path
+            d="M0 31.3801V6.46445H4.54929V8.45099C5.59401 7.13785 7.54866 6.22876 9.57071 6.22876C14.6592 6.22876 17.6923 9.62912 17.6923 15.6898C17.6923 21.8177 14.3559 25.1507 9.46961 25.1507C7.44756 25.1507 5.49291 24.3763 4.54929 23.0632V31.3797H0V31.3801ZM4.44818 15.6901C4.44818 20.4036 6.40283 21.3803 8.79559 21.3803C11.1884 21.3803 13.0419 19.7305 13.0419 15.6901C13.0419 11.65 11.1884 10.0001 8.79559 10.0001C6.40283 9.99982 4.44818 10.9763 4.44818 15.6901Z"
+            fill="white"
+          ></path>
+          <path
+            d="M31.307 24.9153V23.1644C30.633 23.8715 28.982 25.151 26.0163 25.151C21.9051 25.151 19.7483 22.2553 19.7483 18.8547V6.46436H24.2976V17.9792C24.2976 20.3361 25.5108 21.4469 27.4655 21.4469C30.0267 21.4469 31.2063 19.6287 31.2063 17.3395V6.46436H35.7555V24.915H31.307V24.9153Z"
+            fill="white"
+          ></path>
+          <path
+            d="M38.7549 24.9153V0H43.3042V8.45122C44.3489 7.13808 46.3035 6.22898 48.3256 6.22898C53.4141 6.22898 56.4472 9.62934 56.4472 15.69C56.4472 21.818 53.1108 25.151 48.2245 25.151C46.2024 25.151 44.2478 24.3766 43.3042 23.0634V24.9153H38.7549ZM43.2031 15.69C43.2031 20.4035 45.1577 21.3802 47.5505 21.3802C49.9432 21.3802 51.7968 19.7304 51.7968 15.69C51.7968 11.6499 49.9432 10 47.5505 10C45.1577 9.99972 43.2031 10.9762 43.2031 15.69Z"
+            fill="white"
+          ></path>
+          <path
+            d="M58.6041 24.9153V0H63.1534V24.9153H58.6041Z"
+            fill="white"
+          ></path>
+          <path
+            d="M66.1532 4.34345V0H70.7025V4.34345H66.1532ZM66.1532 24.9153V6.46435H70.7025V24.915H66.1532V24.9153Z"
+            fill="white"
+          ></path>
+          <path
+            d="M72.8591 15.8247C72.8591 9.394 76.5999 6.229 81.6547 6.229C86.2043 6.229 89.4396 8.65326 89.9111 13.2657H85.2607C85.0245 11.2455 83.7439 9.99974 81.7221 9.99974C79.3297 9.99974 77.5435 11.6496 77.5435 15.6897C77.5435 19.7301 79.2623 21.3799 81.6214 21.3799C83.576 21.3799 85.0248 20.2688 85.261 18.2486H89.9114C89.5748 22.2554 86.845 25.151 81.7225 25.151C76.5662 25.151 72.8591 21.9523 72.8591 15.8247Z"
+            fill="white"
+          ></path>
+          <path
+            d="M31.2776 51.3001V49.4479C30.334 50.7614 28.2783 51.5358 26.2562 51.5358C21.3696 51.5358 18.1346 48.2025 18.1346 42.0748C18.1346 36.2165 21.3025 32.6138 26.391 32.6138C28.4131 32.6138 30.2329 33.5229 31.2776 34.8364V26.3845H35.8269V51.3001H31.2776ZM22.785 42.0745C22.785 46.1149 24.6386 47.7648 27.0313 47.7648C29.4238 47.7648 31.3787 46.788 31.3787 42.0745C31.3787 37.361 29.4241 36.3846 27.0313 36.3846C24.6386 36.3846 22.785 38.0344 22.785 42.0745Z"
+            fill="white"
+          ></path>
+          <path
+            d="M38.8267 30.7283V26.3845H43.3759V30.7283H38.8267ZM38.8267 51.3001V32.8492H43.3759V51.3001H38.8267Z"
+            fill="white"
+          ></path>
+          <path
+            d="M53.5492 32.6133C55.908 32.6133 57.6604 33.455 58.604 34.8018L58.6377 32.8486H63.1536V50.9965C63.1536 54.4646 61.1316 57.9999 54.5939 57.9999C47.6182 57.9999 46.1687 54.3972 46.1013 51.771H50.7521C50.7521 52.4107 51.0554 54.3636 54.4591 54.3636C57.1889 54.3636 58.604 53.3875 58.604 50.7609V48.4039C57.7278 49.6161 55.8406 50.5252 53.2796 50.5252C50.8195 50.5252 45.731 48.9763 45.731 41.7372C45.7306 35.3409 49.8421 32.6133 53.5492 32.6133ZM54.4925 47.0911C56.5483 47.0911 58.6374 45.8117 58.6374 41.7376C58.6374 37.6635 56.5479 36.3843 54.4925 36.3843C52.4371 36.3843 50.3139 37.6635 50.3139 41.7376C50.3139 45.8117 52.4371 47.0911 54.4925 47.0911Z"
+            fill="white"
+          ></path>
+          <path
+            d="M66.1532 30.7283V26.3845H70.7025V30.7283H66.1532ZM66.1532 51.3001V32.8492H70.7025V51.3001H66.1532Z"
+            fill="white"
+          ></path>
+          <path
+            d="M79.8691 51.4685C76.2968 51.4685 74.9821 50.189 74.9821 47.1587V36.6536H72.1853V32.8489H74.9821V27.7317H79.5318V32.8489H83.677V36.6536H79.5318V45.8456C79.5318 47.2261 79.9025 47.4614 81.3853 47.4614C82.2615 47.4614 83.2726 47.3941 83.2726 47.3941V51.2322C83.2726 51.2325 81.79 51.4685 79.8691 51.4685Z"
+            fill="white"
+          ></path>
+          <path
+            d="M96.6513 39.3472V38.7075C96.6513 37.2597 96.0447 36.3172 93.3153 36.3172C89.8778 36.3172 89.8104 38.2364 89.8104 38.8425H85.4293C85.4293 36.1152 86.5751 32.6135 93.4498 32.6135C99.9874 32.6135 101.201 35.8795 101.201 38.5395V48.7072C101.201 50.1214 101.437 51.3002 101.437 51.3002H96.7862V49.448C95.5055 50.7614 93.652 51.5358 91.057 51.5358C87.4173 51.5358 84.6542 49.448 84.6542 45.7446C84.6542 41.5361 88.6646 40.5597 90.2819 40.3237L96.6513 39.3472ZM96.6513 42.8153C96.6513 42.8153 93.4498 43.2863 92.0006 43.556C91.2592 43.6907 90.5515 43.859 90.046 44.2628C89.6079 44.5995 89.3383 45.1045 89.3383 45.7779C89.3383 46.283 89.5405 48.0005 92.068 48.0005C93.5509 48.0005 94.8652 47.4618 95.5729 46.7544C96.4491 45.8456 96.6513 44.6668 96.6513 43.7917V42.8153Z"
+            fill="white"
+          ></path>
+          <path
+            d="M104.2 51.3001V26.3845H108.75V51.3001H104.2Z"
+            fill="white"
+          ></path>
+        </svg>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="index.html"
+              >Introducción <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="usar-guia.html"
+              >¿Cómo usar esta guía?</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-item nav-link active" href="autoevalucion.html">
+              Autoevaluación</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="metodologia.html">
+              Metodología</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="acerca-de-esta-guia.html"
+              >Acerca de esta guía</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+		<div class="wrapper d-flex align-items-stretch">
+	
+      <!-- Page Content  -->
+      <div id="content" class="p-4  pt-5">
+        <div class="container contenedor-texto">
+
+          <div class="row pt-4" style="text-align: start">
+            <div class="col-md-12 p-0">
+              <div class="somee">
+                <h2 class="titulo5 py-3" id="titulo2"><b> <samp>#</samp>Autoevaluación del grado de madurez digital en materia de datos de la organización</b></h2>
+              </div>
+              <hr>
+
+              <div class="box">
+
+                <div class="boxg-1">
+                  <!-- step 1 -->
+                  <div class="step-box p-0" id="step-box-1">
+                    <div class="somee pt-2">
+                      <h5 id="sub20"><b> 1. Liderazgo </b></h5>
+                      <p class="">
+                        Se refiere a la existencia de un compromiso político de alto nivel. Una estrategia de datos anunciada desde el poder ejecutivo nacional o local que permee de manera transversal a todas las instituciones públicas.
+                      </p>
+                    </div>
+                    <div class="text-left col-12 p-0">
+                         <span class="pr-3" style="color:rgb(72, 71, 71); font-weight: 500;"> CONDICIÓN 1/8</span>
+                     
+                      <div class="tablero">
+                        <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
+                        <span class="badge badge-primary">Nulo</span>
+                        <span class="badge badge-secondary">Bajo</span>
+                        <span class="badge badge-success">Medio</span>
+                        <span class="badge badge-danger">Alto</span>
+                      </div>
+                    <div class="div p-3">
+                    <h5 class="text-left t-question">1.1 ¿Existe un compromiso político de alto nivel para la construcción de una estrategia integral de datos?</h5>
+                      <div class="text-left mt-4">
+                          <div class="style-question radio-op1">
+                              <input type="radio" id="q1-1" name="modulo1-q1" value="1">
+                              <label for="q1-1">No existe</label><br>
+                          </div>
+                          <div class="style-question radio-op2">
+                              <input type="radio" id="q1-2" name="modulo1-q1" value="2">
+                              <label for="q1-2">Declaraciones públicas del Jefe del Ejecutivo o a nivel Ministerial</label><br>
+                          </div>
+                          <div class="style-question radio-op3">
+                              <input type="radio" id="q1-3" name="modulo1-q1" value="3">
+                              <label for="q1-3">Compromiso en el Plan de Desarrollo, Estrategia Digital o Compromiso público internacional</label>
+                          </div>
+                          <div class="style-question radio-op4">
+                              <input type="radio" id="q1-4" name="modulo1-q1" value="4">
+                              <label for="q1-4">Decreto Presidencial o Proyecto/Iniciativa de Ley </label>
+                          </div>
+
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+              
+                  <!-- step 2 -->
+                  <div class="step-box2 p-0 " id="step-box-2" >
+                    <div class="text-left col-md-12">
+                      <h5 class="text-left t-question">1.2 ¿Existe una persona con un rol definido que lidere la estrategia integral de datos y que tenga influencia transversal en las instituciones de gobierno? </h5>
+                      <div class="text-left mt-4">
+                          <div class="style-question radio-op1">
+                              <input type="radio" id="q2-1" name="modulo1-q2" value="1">
+                              <label for="q2-1">No existe</label><br>
+                          </div>
+                          <div class="style-question radio-op2">
+                              <input type="radio" id="q2-2" name="modulo1-q2" value="2">
+                              <label for="q2-2">Existe una persona o equipo dentro de una unidad de gobierno que lidera iniciativas relacionadas con datos, sin embargo, no cuenta con el liderazgo o atribuciones transversales o empoderamiento en cuanto a definición de iniciativas, estrategia o presupuesto.</label><br>
+                          </div>
+                          <div class="style-question radio-op3">
+                              <input type="radio" id="q2-3" name="modulo1-q2" value="3">
+                              <label for="q2-3">Existe una persona que se considera el Líder de Datos con algunas atribuciones transversales pero sin un rol definido en la estructura organizacional del gobierno.</label>
+                          </div>
+                          <div class="style-question radio-op4">
+                              <input type="radio" id="q2-4" name="modulo1-q2" value="4">
+                              <label for="q2-4">Existe el rol de Líder Nacional de Datos con una oficina o equipo dedicado específicamente a la implementación de la estrategia de datos, con atribuciones y presupuesto propios.</label>
+                          </div>
+                          
+                      </div>
+                    </div>
+                  </div>
+                  <!-- step 3 -->
+                  <div class="step-box3 p-0" id="step-box-3">
+                      <div class="text-left col-md-12">
+                          <h5 class="text-left t-question">1.3 ¿Existe un modelo de gobernanza de datos institucionalizado?</h5>
+                          <div class="text-left mt-4">
+                            <div class="style-question radio-op1">
+                              <input type="radio" id="q3-1" name="modulo1-q3" value="1">
+                              <label for="q3-1">No existe</label><br>
+                            </div>
+                            <div class="style-question radio-op2">
+                                <input type="radio" id="q3-2" name="modulo1-q3" value="2">
+                                <label for="q3-2">Se tienen claros algunos roles, responsabilidades y elementos legales y de infraestructura que deberían coordinarse para conformar un modelo de gobernanza, sin embargo, no existe un modelo institucionalizado. </label><br>
+                            </div>
+                            <div class="style-question radio-op3">
+                                <input type="radio" id="q3-3" name="modulo1-q3" value="3">
+                                <label for="q3-3">El modelo se encuentra en desarrollo. Algunos elementos (legales, políticos, financieros, organizacionales y tecnológicos) ya operan de manera coordinada. </label>
+                            </div>
+                            <div class="style-question radio-op4">
+                                <input type="radio" id="q3-4" name="modulo1-q3" value="4">
+                                <label for="q3-4">Existe un Modelo de Gobernanza de Datos con las responsabilidades, procesos y elementos suficientes para coordinar una política integral de datos de manera sostenible.</label>
+                            </div>
+
+                            <a href="#sub22"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-1 ml-1">Siguiente</button></a>
+                            
+                            <!-- <a href="#step-box-2"><button type="button" class="btn float-right mt-4 btn-style btn-back-2"><i class="fas fa-chevron-left"></i></button></a> -->
+                          </div>
+                      </div>
+                  </div>
+
+                </div>
+                
+
+                <div class="boxg-2 d-none">
+                <!-- step 4 -->
+                <div class="step-box4 p-0" id="step-box-4" >
+                  <div class="somee pt-2">
+                      <h5 id="sub22"><b> 2. Financiamiento </b> </h5>
+                    <p class="">
+                        La existencia de una estrategia de sostenibilidad financiera que incluya presupuesto
+                         asignado específicamente a la gestión y promoción de casos de uso de datos, 
+                         así como a la contratación/nómina de perfiles necesarios para la implementación 
+                         de las políticas.
+                    </p>
+                  </div>
+                  <div class="text-left col-md-12">
+                    <span>CONDICIÓN 2/8</span>
+                    <div class="tablero">
+                      <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
+                      <span class="badge badge-primary">Nulo</span>
+                      <span class="badge badge-secondary">Bajo</span>
+                      <span class="badge badge-success">Medio</span>
+                      <span class="badge badge-danger">Alto</span>
+                    </div>
+                    <h5 class="text-left t-question">2.1 ¿Existe un presupuesto asignado a una estrategia de datos? ¿Este presupuesto incluye fondos para promover el uso dentro y fuera de gobierno (Ej, desarrollo de herramientas, capacitación a usuarios)?</h5>
+                    <div class="text-left mt-4">
+                      <div class="style-question radio-op1">
+                            <input type="radio" id="q4-1" name="modulo1-q4" value="1">
+                            <label for="q4-1">No existe</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q4-2" name="modulo1-q4" value="2">
+                            <label for="q4-2">Existen recursos divididos en distintas áreas de gobierno
+                              dirigidas a iniciativas relacionadas con datos.</label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q4-3" name="modulo1-q4" value="3">
+                            <label for="q4-3">Existe una partida específica en el presupuesto 
+                              federal/nacional dirigida a la estrategia de datos.</label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q4-4" name="modulo1-q4" value="4">
+                            <label for="q4-4">Existe un fondo público o fideicomiso dirigido a la estrategia de datos. Este fondo público incluye recursos para acciones de generación, publicación, fomento al uso y construcción de capacidades. </label>
+                        </div>
+                      </div>
+                   </div>
+                </div>
+
+                <!-- step 5 -->
+                <div class="step-box5 p-0" id="step-box-5" >
+                  <div class="text-left col-md-12">
+                    <h5 class="text-left t-question">2.2 ¿Existe coordinación con el Ministerio de Hacienda u Oficina homóloga  para lograr una sostenibilidad financiera de la política de datos?</h5>
+                    <div class="text-left mt-4">
+                      <div class="style-question radio-op1">
+                            <input type="radio" id="q5-1" name="modulo1-q5" value="1">
+                            <label for="q5-1">No existe</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q5-2" name="modulo1-q5" value="2">
+                            <label for="q5-2">	Se han tenido algunas conversaciones al respecto.</label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q5-3" name="modulo1-q5" value="3">
+                            <label for="q5-3">Son convocados de manera frecuente para analizar las necesidades financieras de la estrategia de datos.</label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q5-4" name="modulo1-q5" value="4">
+                            <label for="q5-4">Forman parte de un consejo o mecanismo interinstitucional coordinador de la estrategia de datos.</label>
+                        </div>
+
+                      </div>
+                   </div>
+                </div>
+
+                <!-- step 6 -->
+                <div class="step-box6 p-0" id="step-box-6" >
+                  <div class="text-left col-md-12">
+                  
+                    <h5 class="text-left t-question">2.3 ¿Existe inversión del sector privado en la estrategia de datos?</h5>
+                    <div class="text-left mt-4">
+                      <div class="style-question radio-op1">
+                            <input type="radio" id="q6-1" name="modulo1-q6" value="1">
+                            <label for="q6-1">No existe</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q6-2" name="modulo1-q6" value="2">
+                            <label for="q6-2"> Se han dado algunas colaboraciones con inversión del sector privado, sin embargo, no son recurrentes o no se les da seguimiento. </label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q6-3" name="modulo1-q6" value="3">
+                            <label for="q6-3">Existe un fondo público-privado en el que empresas aportan recursos financieros, sin embargo, no forman parte del proceso de definición de objetivos de los proyectos o iniciativas de datos. </label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q6-4" name="modulo1-q6" value="4">
+                            <label for="q6-4">Existe un fondo público-privado en el que empresas aportan recursos financieros, y forman parte del proceso de definición de objetivos de los proyectos o iniciativas de datos.  </label>
+                        </div>
+                                            <!-- <div class="text-left mt-4">
+                        <div class="somee pt-3b callout-container">
+                            <h4>Recomendaciones:</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos, voluptatem modi iure fugit architecto!
+                             Dolores mollitia, facilis enim consequuntur illum minima iusto maiores molestias sapiente sit reprehenderit saepe praesentium?
+                        </div>
+                     </div> -->
+
+                       
+                  
+
+                        <a href="#sub23"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-2 ml-1">Siguiente</button></a>
+                        <a href="#sub20"><button type="button" class="btn float-right mt-4 btn-style btn-back-5"><i class="fas fa-chevron-left"></i></button></a>
+                      </div>
+                   </div>
+                </div>
+
+                </div>
+
+              
+
+                <div class="boxg-3 d-none">
+                <!-- step 7 -->
+                <div class="step-box7 p-0 " id="step-box-7" >
+                  <div class="somee pt-2">
+                      <h5 id="sub23"><b>3. Marco normativo y legislativo </b></h5>
+                    <p class="">
+                      Se refiere a la existencia de una capa mínima de normativa, leyes, y/o regulaciones que no solamente tengan que ver con el ciclo de vida de los datos, sino con la existencia de conceptos que habilitan y controlan su aprovechamiento.
+                    </p>
+                  </div>
+                  <div class="text-left col-md-12">
+                    <span>CONDICIÓN 3/8</span>
+                    <div class="tablero">
+                      <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
+                      <span class="badge badge-primary">Nulo</span>
+                      <span class="badge badge-secondary">Bajo</span>
+                      <span class="badge badge-success">Medio</span>
+                      <span class="badge badge-danger">Alto</span>
+                    </div>
+                    <h5 class="text-left t-question">3.1 ¿Existe una política o instrumento normativo sobre transparencia y/o acceso a la Información? </h5>
+                    <div class="text-left mt-4">
+                      <div class="style-question radio-op1">
+                            <input type="radio" id="q7-1" name="modulo1-q7" value="1">
+                            <label for="q7-1">No existe</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q7-2" name="modulo1-q7" value="2">
+                            <label for="q7-2">Existe como un objetivo del Plan de Desarrollo nacional o local.</label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q7-3" name="modulo1-q7" value="3">
+                            <label for="q7-3">Existe una Ley de Transparencia y/o Acceso a la Información publicada. </label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q7-4" name="modulo1-q7" value="4">
+                            <label for="q7-4">Existe una Ley de Transparencia y/o Acceso a la Información publicada, así como  órgano autónomo con presupuesto propio para asegurar su cumplimiento.</label>
+                        </div>
+
+                      </div>
+                   </div>
+                </div>
+
+                <!-- step 8 -->
+                <div class="step-box8 p-0" id="step-box-8" >
+                  <div class="text-left col-md-12">
+                 
+                    <h5 class="text-left t-question">3.2 ¿Existe una política o instrumento normativo sobre privacidad y protección de datos? </h5>
+                    <div class="text-left mt-4">
+                        <div class="style-question radio-op1">
+                            <input type="radio" id="q8-1" name="modulo1-q8" value="1">
+                            <label for="q8-1">No existe</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q8-2" name="modulo1-q8" value="2">
+                            <label for="q8-2">Existe como un objetivo del Plan de Desarrollo nacional o local.</label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="8-3" name="modulo1-q8" value="3">
+                            <label for="q8-3">Existe una Ley de Transparencia y/o Acceso a la Información publicada.</label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q8-4" name="modulo1-q8" value="4">
+                            <label for="q8-4">Existe una Ley de Transparencia y/o Acceso a la Información publicada, así como órgano autónomo con presupuesto propio para asegurar su cumplimiento.</label>
+                        </div>
+
+                      </div>
+                    </div>
+                </div>
+
+                <!-- step 9 -->
+                <div class="step-box9 p-0" id="step-box-9" >
+                  <div class="text-left col-12">
+                    <h5 class="text-left t-question">3.3 ¿Existe una política o instrumento normativo de datos abiertos? </h5>
+                      <div class="text-left mt-4">
+                        <div class="style-question radio-op1">
+                            <input type="radio" id="q9-1" name="modulo1-q9" value="1">
+                            <label for="q9-1">No existe</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q9-2" name="modulo1-q9" value="2">
+                            <label for="q9-2">Existen ejercicios aislados de apertura de datos en algunas áreas de gobierno.</label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q9-3" name="modulo1-q9" value="3">
+                            <label for="q9-3">Existe un objetivo del  Plan de Desarrollo, o estrategia sobre datos abiertos que involucra a todas las áreas de gobierno.</label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q9-4" name="modulo1-q9" value="4">
+                            <label for="q9-4">Existe una Política o Ley de Datos Abiertos publicada de alcance transversal.</label>
+                        </div>
+
+                      </div>
+                  </div>
+                </div>
+
+                <!-- step  10 -->
+                <div class="step-box10 p-0 " id="step-box-10" >
+                <div class="text-left col-md-12">
+                  <h5 class="text-left t-question">3.4 ¿Existe una política o instrumento normativo de datos en general? 
+                    Es decir, que incluya la visión y procesos para la gestión de todos los tipos de datos que genera el gobierno.
+                  </h5>
+                  <div class="text-left mt-4">
+                    <div class="style-question radio-op1">
+                          <input type="radio" id="q10-1" name="modulo1-q10" value="1">
+                          <label for="q10-1">No existe</label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q10-2" name="modulo1-q10" value="2">
+                          <label for="q10-2">Existe un instrumento normativo relacionado con datos estadísticos y geográficos.</label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q10-3" name="modulo1-q10" value="3">
+                          <label for="q10-3">En desarrollo.</label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q10-4" name="modulo1-q10" value="4">
+                          <label for="q10-4">Existe una Ley de Datos publicada que considera todos los tipos de datos que genera el gobierno. </label>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- step  11 -->
+                <div class="step-box11 p-0" id="step-box-11" >
+                  <div class="text-left col-md-12">
+                    <h5 class="text-left t-question">3.5 ¿Existe una política o instrumento normativo sobre conservación y preservación de archivos?
+                      ¿A qué nivel?
+                    </h5>
+                    <div class="text-left mt-4">
+                      <div class="style-question radio-op1">
+                            <input type="radio" id="q11-1" name="modulo1-q11" value="1">
+                            <label for="q11-1">No existe</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q11-2" name="modulo1-q11" value="2">
+                            <label for="q11-2">Existen iniciativas para la conservación y preservación de archivos que se implementan de manera aislada por algunas áreas de gobierno.</label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q11-3" name="modulo1-q11" value="3">
+                            <label for="q11-3">Existe una Ley de Archivos publicada, de carácter transversal, sin embargo, no contempla aspectos de digitalización o preservación histórica. </label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q11-4" name="modulo1-q11" value="4">
+                            <label for="q511-4">Existe una Ley de Archivos publicada, de carácter transversal, que considera aspectos de preservación digital de archivos actuales e históricos.</label>
+                        </div>
+  
+                    </div>
+                  </div>
+                </div>
+
+                <!-- step  12 -->
+                <div class="step-box12 p-0" id="step-box-12" >
+                  <div class="text-left col-md-12">
+                    <h5 class="text-left t-question">3.6 ¿Existe una política o instrumento normativo sobre Tecnologías de la Información y Comunicaciones (TICs) que incluyen temas de ciberseguridad y/o protección de datos?</h5>
+                    <div class="text-left mt-4">
+                      <div class="style-question radio-op1">
+                            <input type="radio" id="q12-1" name="modulo1-q12" value="1">
+                            <label for="q12-1">No existe</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q12-2" name="modulo1-q12" value="2">
+                            <label for="q12-2">Existe un objetivo del Plan de Desarrollo u otro instrumento de planeación relacionado a la regulación de las Tecnologías de la Información y Comunicaciones.</label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q12-3" name="modulo1-q12" value="3">
+                            <label for="q12-3">Existe una Ley publicada que regula las TICs, sin embargo, las cuestiones sobre ciberseguridad y/o protección de datos se atienden a través de otros instrumentos no normativos que la complementan.</label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q12-4" name="modulo1-q12" value="4">
+                            <label for="q12-4">Existe una Ley publicada que regula las TICs, y que incluye temas de ciberseguridad y/o protección de datos, entre otros.</label>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- step  13 -->
+                <div class="step-box13 p-0" id="step-box-13" >
+                  <div class="text-left col-md-12">
+                    <h5 class="text-left t-question">3.7 ¿Existe una normativa o lineamientos transversales sobre gestión de los datos, que integre elementos de gobernanza, interoperabilidad y calidad?</h5>
+                    <div class="text-left mt-4">
+                      <div class="style-question radio-op1">
+                            <input type="radio" id="q13-1" name="modulo1-q13" value="1">
+                            <label for="q13-1">No existe</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q13-2" name="modulo1-q13" value="2">
+                            <label for="q13-2">En desarrollo</label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q13-3" name="modulo1-q13" value="3">
+                            <label for="q13-3">Existe un instrumento normativo sobre interoperabilidad de los sistemas internos de gobierno que se aplica de manera progresiva. </label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q13-4" name="modulo1-q13" value="4">
+                            <label for="q13-4">Existe un instrumento normativo sobre interoperabilidad entre sistemas internos y externos al gobierno, y que se aplica de manera transversal a todas las áreas.</label>
+                        </div>
+  
+                    </div>
+                  </div>
+                </div>
+
+                <!-- step  14 -->
+                <div class="step-box14 p-0" id="step-box-14" >
+                <div class="text-left col-md-12">
+                  <h5 class="text-left t-question">3.8 ¿A qué nivel se vinculan las políticas de datos, gobierno digital, TICs, archivos, competencia, derechos de autor, y otras que se relacionan?</h5>
+                  <div class="text-left mt-4">
+                    <div class="style-question radio-op1">
+                          <input type="radio" id="q14-1" name="modulo1-q14" value="1">
+                          <label for="q14-1">No existe</label><br>
+                      </div>
+                      <div class="style-question radio-op2">
+                          <input type="radio" id="q14-2" name="modulo1-q14" value="2">
+                          <label for="q14-2">Existe un mapeo de actores y responsables de estas políticas, sin embargo, el nivel de comunicación y vinculación es bajo.</label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q14-3" name="modulo1-q14" value="3">
+                          <label for="q14-3">Existe un mapeo de actores y responsables de estas políticas y se organizan llamadas o reuniones de trabajo de manera esporádica.</label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q14-4" name="modulo1-q14" value="4">
+                          <label for="q14-4">Existe un diálogo constante (reuniones mensuales/bimestrales) con los responsables de estas políticas para coordinar y alinear acciones.</label>
+                      </div>
+                  </div>
+                </div>
+                </div>
+
+                <!-- step  15 -->
+                <div class="step-box15 p-0" id="step-box-15" >
+                  <div class="text-left col-md-12">
+                    <h5 class="text-left t-question">3.9 ¿Existe una política o instrumento normativo sobre economía digital, que aborde temas sobre transferencia de datos entre el sector público y privado, y de manera transfronteriza? </h5>
+                    <div class="text-left mt-4">
+                      <div class="style-question radio-op1">
+                            <input type="radio" id="q15-1" name="modulo1-q15" value="1">
+                            <label for="q15-1">No existe</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q15-2" name="modulo1-q15" value="2">
+                            <label for="q15-2">Etapa exploratoria o como un objetivo del Plan de Desarrollo nacional o local.</label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q15-3" name="modulo1-q15" value="3">
+                            <label for="q15-3">La transferencia de datos entre sectores (público - privado) y de manera transfronteriza se regula a través de distintos instrumentos. </label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q15-4" name="modulo1-q15" value="4">
+                            <label for="q15-4">Mandato legal específico publicado relacionado con la transferencia de datos entre sectores (público - privado) y de manera transfronteriza.</label>
+                        </div>
+
+                        <!-- <div class="text-left mt-4">
+                            <div class="somee pt-3b callout-container">
+                                <h4>Recomendaciones:</h4>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos, voluptatem modi iure fugit architecto!
+                                Dolores mollitia, facilis enim consequuntur illum minima iusto maiores molestias sapiente sit reprehenderit saepe praesentium?
+                            </div>
+                        </div> -->
+                        
+
+                        
+                        <a href="#sub24"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-3 ml-1">Siguiente</button></a>
+                        <a href="#sub22"><button type="button" class="btn float-right mt-4 btn-style btn-back-14"><i class="fas fa-chevron-left"></i></button></a>
+                    </div>
+                  </div>
+                </div>
+                
+                </div>
+               
+
+                <div class="boxg-4 d-none">
+                 <!-- step  16 -->
+                  <div class="step-box16 p-0" id="step-box-16" >
+                    <div class="somee pt-2">
+                        <h5 id="sub24"><b>4. Estructura organizacional y competencias institucionales </b></h5>
+                      <p class="">
+                        Se refiere a la existencia de una oficina o equipo con atribuciones y experiencia para diseñar e implementar políticas de datos en coordinación con otras áreas de gobierno. También nos referimos a los roles existentes dentro de cada Ministerio/Institución con responsabilidades y conocimientos en la gestión de datos.
+                      </p>
+                    </div>
+                    <div class="text-left col-md-12">
+                      <span>CONDICIÓN 4/8</span>
+                      <div class="tablero">
+                        <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
+                        <span class="badge badge-primary">Nulo</span>
+                        <span class="badge badge-secondary">Bajo</span>
+                        <span class="badge badge-success">Medio</span>
+                        <span class="badge badge-danger">Alto</span>
+                      </div>
+                      <h5 class="text-left t-question">4.1 ¿Existe un equipo multidisciplinario o área dentro del gobierno encargado del diseño, implementación y evaluación de una estrategia de datos? </h5>
+                      <div class="text-left mt-4">
+                        <div class="style-question radio-op1">
+                              <input type="radio" id="q16-1" name="modulo1-q16" value="1">
+                              <label for="q16-1">No existe</label><br>
+                          </div>
+                          <div class="style-question radio-op2">
+                              <input type="radio" id="q16-2" name="modulo1-q16" value="2">
+                              <label for="q16-2">	Existen algunas personas que son champions o referentes en distintas áreas de gobierno que impulsan el uso de datos de manera no coordinada.</label><br>
+                          </div>
+                          <div class="style-question radio-op3">
+                              <input type="radio" id="q16-3" name="modulo1-q16" value="3">
+                              <label for="q16-3">Existe un área responsable de políticas de gobierno digital/innovación/TICs u otras relacionadas que entre sus iniciativas se encuentra la estrategia de datos.</label>
+                          </div>
+                          <div class="style-question radio-op4">
+                              <input type="radio" id="q16-4" name="modulo1-q16" value="4">
+                              <label for="q16-4">Existe un equipo multidisciplinario o área específica dentro de la estructura organizacional del gobierno, encargado del diseño, implementación y evaluación de la estrategia de datos, con atribuciones y presupuesto para ejecutar sus objetivos. </label>
+                          </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- step  17 -->
+                  <div class="step-box17 p-0" id="step-box-17" >
+                    <div class="text-left col-md-12">
+                      <h5 class="text-left t-question">4.2 ¿Existe un equipo técnico (ingenieros, programadores, científicos de datos, etc) dentro del gobierno encargado de dar asesoría en la implementación de la estrategia de datos? </h5>
+                      <div class="text-left mt-4">
+                        <div class="style-question radio-op1">
+                            <input type="radio" id="q17-1" name="modulo1-q17" value="1">
+                            <label for="q17-1">No existe</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q17-2" name="modulo1-q17" value="2">
+                            <label for="q17-2">Existen expertos en las áreas TIC de cada institución, pero no trabajan de manera coordinada.</label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q17-3" name="modulo1-q17" value="3">
+                            <label for="q17-3">Existe un grupo especializado dentro de una área relacionada a datos/TICs que sirve de apoyo de manera ocasional.</label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q17-4" name="modulo1-q17" value="4">
+                            <label for="q17-4">Existe un grupo especializado coordinado por el Líder Nacional de Datos con presupuesto para proveer la asesoría técnica necesaria a todas las áreas de gobierno.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- step  18 -->
+                  <div class="step-box18 p-0" id="step-box-18" >
+                    <div class="text-left col-md-12">
+                      <h5 class="text-left  t-question">4.3 ¿Existe un mapeo de las personas encargadas de la gestión de datos estratégicos  en las instituciones del gobierno?</h5>
+                      <div class="text-left  mt-4">
+
+                        <div class="style-question radio-op1">
+                          <input type="radio" id="q18-1" name="modulo1-q18" value="1">
+                          <label for="q18-1">No existe</label><br>
+                        </div>
+
+                        <div class="style-question radio-op2">
+                          <input type="radio" id="q18-2" name="modulo1-q18" value="2">
+                          <label for="q18-2">Se tiene conocimiento de algunas personas/áreas que manejan datos o han implementado iniciativas exitosas.</label><br>
+                        </div>
+
+                        <div class="style-question radio-op3">
+                          <input type="radio" id="q18-3" name="modulo1-q18" value="3">
+                          <label for="q18-3">Se tiene conocimiento de estas personas o áreas y se han organizado algunas sesiones de trabajo.</label>
+                        </div>
+
+                        <div class="style-question radio-op4">
+                          <input type="radio" id="q18-4" name="modulo1-q18" value="4">
+                          <label for="q18-4">Se trabaja de manera coordinada con estas áreas o personas en iniciativas de uso de datos.</label>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- step  19 -->
+                  <div class="step-box19 p-0" id="step-box-19" >
+                    <div class="text-left col-md-12">
+                      <h5 class="text-left t-question">4.4 ¿Existe un mapeo de iniciativas dentro del gobierno que utilicen datos estratégicos como insumo de algún producto o servicio? </h5>
+                      <div class="text-left mt-4">
+                        <div class="style-question radio-op1">
+                              <input type="radio" id="q19-1" name="modulo1-q19" value="1">
+                              <label for="q19-1">No existe</label><br>
+                          </div>
+                          <div class="style-question radio-op2">
+                              <input type="radio" id="q19-2" name="modulo1-q19" value="2">
+                              <label for="q19-2">En desarrollo</label><br>
+                          </div>
+                          <div class="style-question radio-op3">
+                              <input type="radio" id="q19-3" name="modulo1-q19" value="3">
+                              <label for="q19-3">Se tiene conocimiento de las iniciativas y se trabaja con algunos responsables para entender los datos que utilizan.</label>
+                          </div>
+                          <div class="style-question radio-op4">
+                              <input type="radio" id="q19-4" name="modulo1-q19" value="4">
+                              <label for="q19-4">Se cuenta con un registro/directorio de las iniciativas de datos que se actualiza de manera constante, así como una comunicación con los responsables y los datos que utilizan.</label>
+                          </div>
+
+                          <h6 class="mt-2">Áreas de estadística, gestión de archivos, compras públicas, transparencia, acceso a la información, protección de datos</h6>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- step  20 -->
+                  <div class="step-box20 p-0" id="step-box-20" >
+                    <div class="text-left col-md-12">
+                      <h5 class="text-left t-question">4.5 ¿Existe un mecanismo de coordinación interinstitucional en dónde se establezcan objetivos, competencias y acciones de seguimiento a una estrategia de datos? </h5>
+                      <div class="text-left mt-4">
+                        <div class="style-question radio-op1">
+                              <input type="radio" id="q20-1" name="modulo1-q20" value="1">
+                              <label for="q20-1">No existe</label><br>
+                          </div>
+                          <div class="style-question radio-op2">
+                              <input type="radio" id="q20-2" name="modulo1-q20" value="2">
+                              <label for="q20-2">En desarrollo</label><br>
+                          </div>
+                          <div class="style-question radio-op3">
+                              <input type="radio" id="q20-3" name="modulo1-q20" value="3">
+                              <label for="q20-3">Existe un mecanismo no institucionalizado conformado por representantes de distintas instituciones públicas.</label>
+                          </div>
+                          <div class="style-question radio-op3">
+                              <input type="radio" id="q20-4" name="modulo1-q20" value="4">
+                              <label for="q20-4">Existe un mecanismo institucionalizado de coordinación con representantes de distintas instituciones públicas.</label>
+                          </div>
+
+                                                  <!-- <div class="text-left mt-4">
+                            <div class="somee pt-3b callout-container">
+                                <h4>Recomendaciones:</h4>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos, voluptatem modi iure fugit architecto!
+                                Dolores mollitia, facilis enim consequuntur illum minima iusto maiores molestias sapiente sit reprehenderit saepe praesentium?
+                            </div>
+                        </div> -->
+
+                          
+                          <a href="#sub25"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-4 ml-1">Siguiente</button></a>
+                          <a href="#step-box-19"><button type="button" class="btn float-right mt-4 btn-style btn-back-19"><i class="fas fa-chevron-left"></i></button></a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              
+
+                <div class="boxg-5 d-none"> 
+                <!-- step  21 -->
+                <div class="step-box21 p-0 " id="step-box-21" >
+                  <div class="somee pt-2">
+                    <h5 id="sub25"><b> 5. Datos: Recolección, uso, almacenamiento y distribución </b></h5>
+                    <p class="">
+                      Se refiere a todos los activos de datos con los que cuenta el gobierno y su ciclo de vida. La existencia de un catálogo/inventario general de datos, clasificación oficial de los datos en el país o repositorio con datos ya disponibles para su uso y reutilización. 
+                    </p>
+                  </div>
+                  <div class="text-left col-md-12">
+                  <span>CONDICIÓN 5/8</span>
+                  <div class="tablero">
+                    <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
+                    <span class="badge badge-primary">Nulo</span>
+                    <span class="badge badge-secondary">Bajo</span>
+                    <span class="badge badge-success">Medio</span>
+                    <span class="badge badge-danger">Alto</span>
+                  </div>
+                  <h5 class="text-left t-question">5.1 ¿Existe un inventario de datos que integre todos los tipos de datos que genera el gobierno?¿Este inventario contiene los metadatos documentados de acuerdo a algún estándar?</h5>
+                  <div class="text-left mt-4">
+                    <div class="style-question radio-op1">
+                          <input type="radio" id="q21-1" name="modulo1-q21" value="1">
+                          <label for="q21-1">No existe</label><br>
+                      </div>
+                      <div class="style-question radio-op2">
+                          <input type="radio" id="q21-2" name="modulo1-q21" value="2">
+                          <label for="q21-2">En desarrollo</label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q21-3" name="modulo1-q21" value="3">
+                          <label for="q21-3">Existe un inventario de datos, sin embargo, está incompleto o no es una práctica institucionalizada. </label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q21-4" name="modulo1-q21" value="4">
+                          <label for="q21-4">Existe un inventario de los datos con los que cuenta el gobierno, junto con los metadatos correspondientes de acuerdo a un estándar. (Ej. Estándar DCAT)</label>
+                      </div>
+
+                   </div>
+                  </div>
+                </div>
+
+                <!-- step  22 -->
+                <div class="step-box22 p-0 " id="step-box-22" >
+                  <div class="text-left col-md-12">
+                    <h5 class="text-left t-question">5.2 ¿Existe una categorización oficial de los tipos de datos del gobierno?
+                      (Personales, Abiertos, Públicos, Sensibles, etc)
+                    </h5>
+                  <div class="text-left mt-4">
+                    <div class="style-question radio-op1">
+                          <input type="radio" id="q22-1" name="modulo1-q22" value="1">
+                          <label for="q22-1">No existe</label><br>
+                      </div>
+                      <div class="style-question radio-op2">
+                          <input type="radio" id="q22-2" name="modulo1-q22" value="2">
+                          <label for="q22-2">Se utiliza la clasificación básica en cada ministerio pero no está institucionalizada.</label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q22-3" name="modulo1-q22" value="3">
+                          <label for="q22-3">Se trabaja en una clasificación de los datos con los que cuenta el gobierno y sin embargo, no se encuentra oficializado.</label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q22-4" name="modulo1-q22" value="4">
+                          <label for="q22-4">Existe una clasificación oficial de los datos que genera el gobierno y se encuentra dentro de un instrumento legal o de planeación.</label>
+                      </div>
+                  </div>
+                </div>
+                </div>
+
+                <!-- step  23 -->
+                <div class="step-box23 p-0 " id="step-box-23" >
+                  <div class="text-left col-md-12">
+                  <h5 class="text-left t-question">5.3 ¿Existe un ejercicio de identificación de los datos más importantes o estratégicos utilizados en el diseño de políticas públicas o para toma de decisiones? </h5>
+                  <div class="text-left mt-4">
+                    <div class="style-question radio-op1">
+                          <input type="radio" id="q23-1" name="modulo1-q23" value="1">
+                          <label for="q23-1">No se conoce</label><br>
+                      </div>
+                      <div class="style-question radio-op2">
+                          <input type="radio" id="q23-2" name="modulo1-q23" value="2">
+                          <label for="q23-2">Se está desarrollando un diagnóstico.</label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q23-3" name="modulo1-q23" value="3">
+                          <label for="q23-3">Se cuenta con un listado o documento que enlista los datos considerados más importantes o estratégicos, sin embargo, no está actualizado.</label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q23-4" name="modulo1-q23" value="4">
+                          <label for="q23-4">Se cuenta con un listado o documento que enlista los datos considerados más importantes o estratégicos y se actualiza regularmente.</label>
+                      </div>
+                  </div>
+                </div>
+                </div>
+
+                <!-- step  24 -->
+                <div class="step-box24 p-0 " id="step-box-24" >
+                  <div class="text-left col-md-12">
+                  <h5 class="text-left t-question">5.4 ¿Se conoce el grado de digitalización de los datos más estratégicos del gobierno? (Ej. zonas de riesgo, ubicación de escuelas, catastro, etc)</h5>
+                  <div class="text-left mt-4">
+                    <div class="style-question radio-op1">
+                          <input type="radio" id="q24-1" name="modulo1-q24" value="1">
+                          <label for="q24-1">No se conoce</label><br>
+                      </div>
+                      <div class="style-question radio-op2">
+                          <input type="radio" id="q24-2" name="modulo1-q24" value="2">
+                          <label for="q24-2">Se está desarrollando un diagnóstico.</label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q24-3" name="modulo1-q24" value="3">
+                          <label for="q24-3">Se cuenta con un diagnóstico no actualizado.</label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q24-4" name="modulo1-q24" value="4">
+                          <label for="q24-4">Se cuenta con un diagnóstico actualizado.</label>
+                      </div>
+
+                    
+                  </div>
+                </div>
+                </div>
+
+                <!-- step  25 -->
+                <div class="step-box25 p-0" id="step-box-25" >
+                  <div class="text-left col-md-12">
+                  <h5 class="text-left t-question">5.5 En caso de que exista un inventario,  ¿Incluye los registros  y sistemas de información públicos?</h5>
+                  <div class="text-left mt-4">
+                    <div class="style-question radio-op1">
+                          <input type="radio" id="q25-1" name="modulo1-q25" value="1">
+                          <label for="q25-1">No se incluye </label><br>
+                      </div>
+                      <div class="style-question radio-op2">
+                          <input type="radio" id="q25-2" name="modulo1-q25" value="2">
+                          <label for="q25-2">El inventario se encuentra en desarrollo.</label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q25-3" name="modulo1-q25" value="3">
+                          <label for="q25-3">El inventario incluye la información de los registros públicos y sistemas de información con los que cuenta el gobierno, sin embargo, no está actualizada.</label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q25-4" name="modulo1-q25" value="4">
+                          <label for="q25-4">El inventario incluye la información actualizada de los registros públicos y sistemas de información con los que cuenta el gobierno.</label>
+                      </div>
+
+                     
+                      </div>
+                    </div>
+                </div>
+
+                <!-- step  26 -->
+                <div class="step-box26  p-0" id="step-box-26" >
+                  <div class="text-left col-md-12">
+                  <h5 class="text-left t-question">5.6 ¿Existen lineamientos para el uso de estándares de datos o especificaciones técnicas en la generación, almacenamiento e intercambio de los mismos?</h5>
+                  <div class="text-left mt-4">
+                    <div class="style-question radio-op1">
+                          <input type="radio" id="q5-26" name="modulo1-q26" value="1">
+                          <label for="q26-1">No existe</label><br>
+                      </div>
+                      <div class="style-question radio-op2">
+                          <input type="radio" id="q5-26" name="modulo1-q26" value="2">
+                          <label for="q26-2">Se han implementado algunas buenas prácticas relacionadas con la gestión e intercambio de los datos. </label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q5-26" name="modulo1-q26" value="3">
+                          <label for="q26-3">Se han implementado algunas buenas prácticas relacionadas con la gestión e intercambio de los datos. </label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q5-26" name="modulo1-q26" value="4">
+                          <label for="q26-4">Existe un área encargada de la generación de estándares de datos, y de vigilar su cumplimiento de manera transversal al gobierno. Se promueve también la adopción de estándares internacionales. </label>
+                      </div>
+
+                      </div>
+                    </div>
+                </div>
+
+                
+                <!-- step  27 -->
+                <div class="step-box27 p-0" id="step-box-27" >
+                  <div class="text-left col-md-12">
+                  <h5 class="text-left t-question">5.7 ¿Existen procedimientos establecidos para la gestión, tratamiento y uso ético de los datos? </h5>
+                  <div class="text-left mt-4">
+                    <div class="style-question radio-op1">
+                          <input type="radio" id="q27-1" name="modulo1-q27" value="1">
+                          <label for="q27-1">No existe</label><br>
+                      </div>
+                      <div class="style-question radio-op2">
+                          <input type="radio" id="q27-2" name="modulo1-q27" value="2">
+                          <label for="q27-2">Se han dado capacitaciones dentro del gobierno sobre el tema de ética en el tratamiento de datos, sin embargo, no existe un procedimiento establecido que sea obligatorio en todas las áreas que gestionan datos. </label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q27-3" name="modulo1-q27" value="3">
+                          <label for="q27-3">Se están desarrollando lineamientos con procesos específicos que deberán atender todas las áreas de gobierno que gestionan datos.  </label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q27-4" name="modulo1-q27" value="4">
+                          <label for="q27-4">Se cuenta con lineamientos que dictan procesos específicos para asegurar la gestión, tratamiento y uso ético de los datos. Éstos toman en cuenta recomendaciones o estándares internacionales.</label>
+                      </div>
+
+                      </div>
+                    </div>
+                </div>
+
+                 <!-- step  28 -->
+                 <div class="step-box28 p-0 " id="step-box-28" >
+                    <div class="text-left col-md-12">
+                      <h5 class="text-left t-question">5.8 ¿Existen casos documentados de uso de datos para la toma de decisiones en el diseño, implementación y evaluación de políticas públicas?</h5>
+                      <div class="text-left mt-4">
+                        <div class="style-question radio-op1">
+                          <input type="radio" id="q28-1" name="modulo1-q28" value="1">
+                          <label for="q28-1">No existe</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q28-2" name="modulo1-q28" value="2">
+                            <label for="q28-2">Se conocen algunos casos pero no se han documentado.</label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q28-3" name="modulo1-q28" value="3">
+                            <label for="q28-3">Existen programas o herramientas (tableros de control, sistemas de información, otros) que se han desarrollado para informar la toma de decisiones dentro del gobierno. Algunos ejercicios se han documentado.</label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q28-4" name="modulo1-q28" value="4">
+                            <label for="q28-4">Existe una estrategia impulsada desde el gobierno para el uso de datos en el proceso de diseño, implementación y evaluación de políticas públicas. </label>
+                        </div>
+                        <!-- <a href="#sub26"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-5 ml-1">Siguiente</button></a>
+                        <a href="#step-box-27"><button type="button" class="btn float-right mt-4 btn-style btn-back-27"><i class="fas fa-chevron-left"></i></button></a> -->
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- step  x -->
+                <div class="step-box28 p-0 " id="step-box-28" >
+                  <div class="text-left col-md-12">
+                    <h5 class="text-left t-question">5.9 ¿Existen estudios o evaluaciones para determinar el valor económico de bases de datos de gobierno? (Estudios de mercado, costo/beneficio, medición  de impacto)</h5>
+                    <div class="text-left mt-4">
+                      <div class="style-question radio-op1">
+                        <input type="radio" id="q40-1" name="modulo1-q40" value="1">
+                        <label for="q40-1">No existe</label><br>
+                      </div>
+                      <div class="style-question radio-op2">
+                          <input type="radio" id="q40-2" name="modulo1-q40" value="2">
+                          <label for="q40-2">Se conocen algunas referencias sobre el valor monetario de algunos conjuntos de datos en el mercado privado.</label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q40-3" name="modulo1-q40" value="3">
+                          <label for="q40-3">Se han realizado algunos estudios para conocer el valor económico de algunos conjuntos de datos de gobierno.</label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q40-4" name="modulo1-q40" value="4">
+                          <label for="q40-4">Se cuenta con una metodología para determinar el valor económico potencial de algunos datos de gobierno. Se ha aplicado esta metodología para medir el valor de algunos datos de gobierno.  </label>
+                      </div>
+                                              <!-- <div class="text-left mt-4">
+                            <div class="somee pt-3b callout-container">
+                                <h4>Recomendaciones:</h4>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos, voluptatem modi iure fugit architecto!
+                                Dolores mollitia, facilis enim consequuntur illum minima iusto maiores molestias sapiente sit reprehenderit saepe praesentium?
+                            </div>
+                        </div> -->
+                      <a href="#sub26"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-5 ml-1">Siguiente</button></a>
+                      <a href="#step-box-27"><button type="button" class="btn float-right mt-4 btn-style btn-back-27"><i class="fas fa-chevron-left"></i></button></a>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                </div>
+
+                
+                <div class="boxg-6 d-none">
+                <!-- step  29 -->
+                <div class="step-box29 p-0 " id="step-box-29" >
+                    <div class="somee pt-2">
+                      <h5 id="sub26"><b> 6. Construcción de capacidades  </b></h5>
+                    <p class="">
+                      Se refiere a la existencia de programas de capacitación para servidores públicos relacionado con el ciclo de vida de los datos, tipos de datos, estándares, análisis de datos, etc. Vinculación con el sector académico u otras organizaciones para proveer estos servicios dentro y fuera del gobierno. 
+                    </p>
+                  </div>
+                  <div class="text-left col-md-12">
+                  <span>CONDICIÓN 6/8</span>
+                  <div class="tablero">
+                    <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
+                    <span class="badge badge-primary">Nulo</span>
+                    <span class="badge badge-secondary">Bajo</span>
+                    <span class="badge badge-success">Medio</span>
+                    <span class="badge badge-danger">Alto</span>
+                  </div>
+                  <h5 class="text-left t-question">6.1 ¿Se han tomado cursos de capacitación dirigidos a personas servidoras públicas sobre temas de gestión y uso de datos?</h5>
+                  <div class="text-left mt-4">
+                    <div class="style-question radio-op1">
+                          <input type="radio" id="q29-1" name="modulo1-q29" value="1">
+                          <label for="q29-1">No se sabe</label><br>
+                      </div>
+                      <div class="style-question radio-op2">
+                          <input type="radio" id="q29-2" name="modulo1-q29" value="2">
+                          <label for="q29-2">Algunas personas han asistido a eventos o conferencias sobre el tema.</label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q29-3" name="modulo1-q29" value="3">
+                          <label for="q29-3">Algunas personas o áreas han tomado cursos o certificaciones sobre el tema.</label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q29-4" name="modulo1-q29" value="4">
+                          <label for="q29-4">Existe una estrategia general para la creación y fortalecimiento de capacidades dentro del gobierno relacionados con la gestión y uso de datos. Esta estrategia incluye la publicación o difusión de materiales didácticos. </label>
+                      </div>
+
+                          </div>
+                        </div>
+                </div>
+
+                 <!-- step  30 -->
+                <div class="step-box30 p-0" id="step-box-30" >
+                 <div class="text-left col-md-12">
+                  <h5 class="text-left t-question">6.2 ¿Existe un organismo o área de gobierno encargada de la formación de personas servidoras públicas? ¿Contempla temáticas sobre gestión y uso de datos?</h5>
+                  <div class="text-left mt-4">
+                    <div class="style-question radio-op1">
+                          <input type="radio" id="q30-1" name="modulo1-q30" value="1">
+                          <label for="q30-1">No existe</label><br>
+                      </div>
+                      <div class="style-question radio-op2">
+                          <input type="radio" id="q30-2" name="modulo1-q30" value="2">
+                          <label for="q30-2">Existen capacitaciones aisladas relacionadas con gestión y uso de datos promovidas por las mismas áreas de gobierno.</label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q30-3" name="modulo1-q30" value="3">
+                          <label for="q30-3">Existe un organismo o área de gobierno encargada de la capacitación a personas servidoras públicas, sin embargo, la oferta de formación relacionada a temas de datos es poca o insuficiente.</label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q30-4" name="modulo1-q30" value="4">
+                          <label for="q30-4">Existe un organismo o área de gobierno encargada de la formación de personas servidoras públicas con un eje dedicado a capacidades y habilidades de gestión y uso de datos.</label>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- step  31 -->
+                <div class="step-box31  p-0" id="step-box-31" >
+                <div class="text-left col-md-12">
+                  <h5 class="text-left t-question">6.3 ¿Se tiene mapeadas comunidades de práctica al interior de gobierno que intercambien experiencias respecto a la gestión y uso de datos? </h5>
+                  <div class="text-left mt-4">
+                    <div class="style-question radio-op1">
+                          <input type="radio" id="q31-1" name="modulo1-q31" value="1">
+                          <label for="q31-1">No se conocen</label><br>
+                      </div>
+                      <div class="style-question radio-op2">
+                          <input type="radio" id="q31-2" name="modulo1-q31" value="2">
+                          <label for="q31-2">Se conocen algunos grupos de personas dentro del gobierno que utilizan datos para resolver problemáticas específicas o intercambiar experiencias.</label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q31-3" name="modulo1-q31" value="3">
+                          <label for="q31-3">Se ha trabajado con alguna comunidad de práctica interna/externa para el diseño o implementación de un proyecto de datos.</label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q31-4" name="modulo1-q31" value="4">
+                          <label for="q31-4">Se cuenta con un directorio de las comunidades de práctica internas y externas con quienes se mantiene una comunicación constante para el intercambio de experiencias. </label>
+                      </div>
+                                                    <!-- <div class="text-left mt-4">
+                            <div class="somee pt-3b callout-container">
+                                <h4>Recomendaciones:</h4>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos, voluptatem modi iure fugit architecto!
+                                Dolores mollitia, facilis enim consequuntur illum minima iusto maiores molestias sapiente sit reprehenderit saepe praesentium?
+                            </div>
+                        </div> -->
+                         
+                          <a href="#sub27"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-6 ml-1">Siguiente</button></a>
+                          <a href="#step-box-30"><button type="button" class="btn float-right mt-4 btn-style btn-back-30"><i class="fas fa-chevron-left"></i></button></a>
+                        </div>
+                      </div>
+                </div>
+
+                </div>
+
+              
+                <div class="boxg-7 d-none">
+                <!-- step  32 -->
+                <div class="step-box32 p-0" id="step-box-32" >
+                  <div class="somee pt-2">
+                      <h5 id="sub27"><b> 7. Demanda y comunidad de usuarios </b></h5>
+                    <p class="">
+                     Se refiere a la existencia de un mapeo de usuarios activos y necesidades de datos fuera del gobierno. Mecanismos institucionalizados de diálogo permanente con actores de sociedad civil, industria. etc. Capacidades técnicas de los usuarios. Interacción digital entre ciudadanos y gobierno.
+                    </p>
+                  </div>
+                  <div class="text-left col-md-12">
+                    <span>CONDICIÓN 7/8</span>
+                    <div class="tablero">
+                      <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
+                      <span class="badge badge-primary">Nulo</span>
+                      <span class="badge badge-secondary">Bajo</span>
+                      <span class="badge badge-success">Medio</span>
+                      <span class="badge badge-danger">Alto</span>
+                    </div>
+                    <h5 class="text-left t-question">7.1 ¿Existe un mecanismo de diálogo y coordinación con sociedad civil, sector privado y academia respecto a proyectos de datos?</h5>
+                    <div class="text-left mt-4">
+                      <div class="style-question radio-op1">
+                            <input type="radio" id="q32-1" name="modulo1-q32" value="1">
+                            <label for="q32-1">No existen</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q32-2" name="modulo1-q32" value="2">
+                            <label for="q32-2">Se invita a sociedad civil a eventos y mesas de diálogo sobre proyectos de datos.</label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q32-3" name="modulo1-q32" value="3">
+                            <label for="q32-3">Se consulta a sociedad civil en el diseño e implementación de proyectos de datos. </label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q32-4" name="modulo1-q32" value="4">
+                            <label for="q32-4">Existe un consejo consultivo de datos con voz y voto de sociedad civil.</label>
+                        </div>
+  
+                          </div>
+                        </div>
+                </div>
+
+                <!-- step  33 -->
+                <div class="step-box33  p-0" id="step-box-33" >
+                <div class="text-left col-md-12">
+                  <h5 class="text-left t-question">7.2 ¿Existe un estudio sobre los actores (empresas/organizaciones), interesados en el desarrollo de productos y servicios de datos, así como de los datos que requieren?</h5>
+                  <div class="text-left mt-4">
+                    <div class="style-question radio-op1">
+                          <input type="radio" id="q33-1" name="modulo1-q33" value="1">
+                          <label for="q33-1">No existe</label><br>
+                      </div>
+                      <div class="style-question radio-op2">
+                          <input type="radio" id="q33-2" name="modulo1-q33" value="2">
+                          <label for="q33-2">En desarrollo</label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q33-3" name="modulo1-q33" value="3">
+                          <label for="q33-3">Se tiene un mapeo a nivel general, sin conocimiento de los datos específicos que requieren.</label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q33-4" name="modulo1-q33" value="4">
+                          <label for="q33-4">Existe un estudio sobre los actores, los tipos de productos y servicios, así como los datos utilizados o de interés.  </label>
+                      </div>
+
+                            </div>
+                          </div>
+                </div>
+
+                <!-- step  34 -->
+                <div class="step-box3 p-0" id="step-box-34" >
+                  <div class="text-left col-md-12">
+                    <h5 class="text-left t-question">7.3 ¿Existen programas/eventos/pilotos para promover el uso e intercambio de datos entre instituciones públicas y con actores fuera de gobierno? </h5>
+                    <div class="text-left mt-4">
+                      <div class="style-question radio-op1">
+                            <input type="radio" id="q34-1" name="modulo1-q34" value="1">
+                            <label for="q34-1">No existen</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q34-2" name="modulo1-q34" value="2">
+                            <label for="q34-2">Existen solo entre instituciones públicas.</label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q34-3" name="modulo1-q34" value="3">
+                            <label for="q34-3">Se han promovido algunos eventos o pilotos para promover el uso e intercambio de datos entre instituciones públicas y actores fuera de gobierno.</label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q34-4" name="modulo1-q34" value="4">
+                            <label for="q34-4">Se cuenta con una estrategia pública para ejecutar programas/eventos/pilotos de manera recurrente y con el objetivo de aumentar la demanda de datos y fortalecer la comunidad de usuarios. </label>
+                        </div>
+  
+                          </div>
+                      </div>
+                </div>
+
+                <!-- step  35 -->
+                <div class="step-box35 p-0" id="step-box-35" >
+                  <div class="text-left col-md-12">
+                    <h5 class="text-left t-question">7.4 ¿Existe una estrategia de incentivos o beneficios  para empresas u organizaciones que compartan y utilicen datos estratégicos*?</h5>
+                    <div class="text-left mt-4">
+                      <div class="style-question radio-op1">
+                            <input type="radio" id="q35-1" name="modulo1-q35" value="1">
+                            <label for="q35-1">No existe</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q35-2" name="modulo1-q35" value="2">
+                            <label for="q35-2">Se está desarrollando un diagnóstico sobre el mercado de datos en el país o gobierno local para entender el número de empresas u organizaciones que utilizan o generan datos de valor. </label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q35-3" name="modulo1-q35" value="3">
+                            <label for="q35-3">Existe un programa de reconocimiento social a organizaciones o empresas que utilizan y comparten datos. (Ej. publicidad, reconocimiento en eventos públicos, entrevistas).</label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q35-4" name="modulo1-q35" value="4">
+                            <label for="q35-4">Existe un sistema de deducciones o créditos tributarios dirigidos a fomentar la inversión en temas relacionados con la generación, uso y compartición de datos que resuelvan problemas públicos o fomenten el desarrollo económico. Este sistema forma parte de la Ley tributaria del país o gobierno local. </label>
+                        </div>
+                                                <!-- <div class="text-left mt-4">
+                            <div class="somee pt-3b callout-container">
+                                <h4>Recomendaciones:</h4>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos, voluptatem modi iure fugit architecto!
+                                Dolores mollitia, facilis enim consequuntur illum minima iusto maiores molestias sapiente sit reprehenderit saepe praesentium?
+                            </div>
+                        </div> -->
+                          
+                            <a href="#sub28"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-7 ml-1">Siguiente</button></a>
+                            <a href="#sub26"><button type="button" class="btn float-right mt-4 btn-style btn-back-34"><i class="fas fa-chevron-left"></i></button></a>
+                          </div>
+                        </div>
+                </div>
+
+                </div>
+
+              
+                <div class="boxg-8 d-none">
+                
+                <!-- step  36 -->
+                <div class="step-box36 p-0" id="step-box-36" >
+                  <div class="somee pt-2">
+                      <h5 id="sub28"><b> 8. Tecnología y mecanismos de transferencia  </b> </h5>
+                    <p class="">
+                      La existencia de políticas o estrategias nacionales de TICs que contengan las condiciones mínimas para el almacenamiento, transformación seguridad y transferencia de datos entre actores de distintos sectores.
+                    </p>
+                  </div>
+                  <div class="text-left col-md-12">
+                    <span>CONDICIÓN 8/8</span>
+                    <div class="tablero">
+                      <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
+                      <span class="badge badge-primary">Nulo</span>
+                      <span class="badge badge-secondary">Bajo</span>
+                      <span class="badge badge-success">Medio</span>
+                      <span class="badge badge-danger">Alto</span>
+                    </div>
+                    <h5 class="text-left t-question">8.1 ¿Existe un catálogo público o privado  para el acceso y consumo masivo (bulk) a  fuentes de datos  por medio de APIs? ¿Estas son utilizadas solo por el gobierno mismo o son abiertas a otros actores?</h5>
+                    <div class="text-left mt-4">
+                      <div class="style-question radio-op1">
+                            <input type="radio" id="q36-1" name="modulo1-q36" value="1">
+                            <label for="q36-1">No existen</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q36-2" name="modulo1-q36" value="2">
+                            <label for="q36-2">Existen algunas APIs que son utilizadas para consultas y transferencias de datos entre instituciones públicas.</label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q36-3" name="modulo1-q36" value="3">
+                            <label for="q36-3">Existen APIs que han sido utilizadas por actores fuera de gobierno para consultas y transferencias de datos, sin embargo, no son tan conocidas y el proceso para acceder a ellas no es claro.</label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q36-4" name="modulo1-q36" value="4">
+                            <label for="q36-4">Existen APIs abiertas a cualquier actor público o privado para consultas y transferencias de datos, acompañadas por manuales de uso claros y disponibles en línea.</label>
+                        </div>
+  
+                          </div>
+                        </div>
+                </div>
+
+                <!-- step  37 -->
+                <div class="step-box37 p-0" id="step-box-37" >
+                <div class="text-left col-md-12">
+                  <h5 class="text-left t-question">8.2 ¿Existe un directorio de servicios o herramientas de intercambio de datos entre usuarios internos y externos de gobierno? ¿Este directorio incluye manuales y documentación necesaria para el uso?</h5>
+                  <div class="text-left mt-4">
+                    <div class="style-question radio-op1">
+                          <input type="radio" id="q37-1" name="modulo1-q37" value="1">
+                          <label for="q37-1">No se tienen claros</label><br>
+                      </div>
+                      <div class="style-question radio-op2">
+                          <input type="radio" id="q37-2" name="modulo1-q37" value="2">
+                          <label for="q37-2">Se están definiendo los canales y procesos.</label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q37-3" name="modulo1-q37" value="3">
+                          <label for="q37-3">Se tienen definidos los canales y procesos al interior de gobierno pero no por parte de los usuarios.</label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q37-4" name="modulo1-q37" value="4">
+                          <label for="q37-4">Se tienen definidos y se cuenta con una estrategia de comunicación para compartir con usuarios y fomentar el uso.</label>
+                      </div>
+
+                        </div>
+                      </div>
+                </div>
+
+                <!-- step  38 -->
+                <div class="step-box38 p-0" id="step-box-38" >
+                  <div class="text-left col-md-12">
+                    <h5 class="text-left t-question">8.3 ¿Existe un espacio de pruebas (sandbox) tecnológico en donde generadores y usuarios puedan experimentar modelos de transferencia de datos para fines específicos?</h5>
+                    <div class="text-left mt-4">
+                      <div class="style-question radio-op1">
+                            <input type="radio" id="q38-1" name="modulo1-q38" value="1">
+                            <label for="q38-1">No existe</label><br>
+                        </div>
+                        <div class="style-question radio-op2">
+                            <input type="radio" id="q38-2" name="modulo1-q38" value="2">
+                            <label for="q38-2">Se está evaluando la viabilidad para el desarrollo de uno.</label><br>
+                        </div>
+                        <div class="style-question radio-op3">
+                            <input type="radio" id="q38-3" name="modulo1-q38" value="3">
+                            <label for="q38-3">En desarrollo o existente pero solo se ha utilizado al interior de un organismo de gobierno. </label>
+                        </div>
+                        <div class="style-question radio-op4">
+                            <input type="radio" id="q38-4" name="modulo1-q38" value="4">
+                            <label for="q38-4">Existe un sandbox tecnológico en un área de gobierno que ha servido para la transferencia de datos entre dos o más áreas de gobierno. Existen conversaciones para pilotear ejercicios con industria, academia o sociedad civil. </label>
+                        </div>
+  
+                          </div>
+                        </div>
+                </div>
+
+                <!-- step  39 -->
+                <div class="step-box39 p-0 " id="step-box-39" >
+                <div class="text-left col-md-12">
+                  <h5 class="text-left t-question">8.4 ¿Existen iniciativas o pilotos sobre la construcción de un mercado de datos a nivel nacional o local? ¿Se ha considerado el intercambio y transferencia de datos transfronteriza?</h5>
+                  <div class="text-left mt-4">
+                    <div class="style-question radio-op1">
+                          <input type="radio" id="q39-1" name="modulo1-q39" value="1">
+                          <label for="q39-1">No existen o no se tienen registradas</label><br>
+                      </div>
+                      <div class="style-question radio-op2">
+                          <input type="radio" id="q39-2" name="modulo1-q39" value="2">
+                          <label for="q39-2">Existen algunos ejemplos de intercambio de datos entre gobierno y empresas o sociedad civil pero no se han documentado ni dado seguimiento. </label><br>
+                      </div>
+                      <div class="style-question radio-op3">
+                          <input type="radio" id="q39-3" name="modulo1-q39" value="3">
+                          <label for="q39-3">Se está desarrollando una estrategia para definir las reglas, procesos y herramientas para atender la oferta y demanda de datos entre actores dentro y fuera del gobierno. </label>
+                      </div>
+                      <div class="style-question radio-op4">
+                          <input type="radio" id="q39-4" name="modulo1-q39" value="4">
+                          <label for="q39-4">Se está desarrollando la propuesta de un piloto de mercado de datos entre actores de gobierno y otros actores (gobiernos, empresas, instituciones académicas) de otros países.</label>
+                      </div>
+                                              <!-- <div class="text-left mt-4">
+                            <div class="somee pt-3b callout-container">
+                                <h4>Recomendaciones:</h4>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos, voluptatem modi iure fugit architecto!
+                                Dolores mollitia, facilis enim consequuntur illum minima iusto maiores molestias sapiente sit reprehenderit saepe praesentium?
+                            </div>
+                        </div> -->
+
+                                      
+                         
+                          <a href="#step-box-resultado-8"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-8 ml-1">Resultado</button></a>
+                          <a href="#step-box-39"><button type="button" class="btn float-right mt-4 btn-style btn-back-39"><i class="fas fa-chevron-left"></i></button></a>
+                        </div>
+                      </div>
+                </div>
+
+                
+                
+                </div>
+                <!-- respuesta 8 -->
+                <div class="box-result-8 d-none p-0  mb-5 box-r-style" id="step-box-resultado-8">
+                  <div class="text-center">
+
+                    
+                    
+                    <!-- <a href="#step-box-resultado-8"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-8 ml-1">Resultado</button></a> -->
+                    <!-- <span>PREGUNTA /3</span> -->
+                    <div class="style-r mb-3"><h5 class="text-left"> <i class="fas fa-arrow-right"></i> Resultado final dimensiones 8/8</h5>
+                    </div>
+
+                    <!-- <div class="tablero">
+                      <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
+                      <span class="badge badge-primary">Nulo</span>
+                      <span class="badge badge-secondary">Bajo</span>
+                      <span class="badge badge-success">Medio</span>
+                      <span class="badge badge-danger">Alto</span>
+                    </div> -->
+                    <button type="button" id="btnCrearPdf" class="btn float-right btn-style-nav ml-1 btn-pdf mb-3 btnCrearPdf"> <i class="fa-solid fa-file-arrow-down"></i></button>
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">Dimensión</th>
+                          <th scope="col">Pregunta</th>
+                          <th scope="col">Nulo</th>
+                          <th scope="col">Bajo</th>
+                          <th scope="col">Medio</th>
+                          <th scope="col">Alto</th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td rowspan="4" class="text-left pl-1 style-dimencion">1. Liderazgo</th>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq ">1.1 ¿Existe un compromiso político de alto nivel para la construcción de una estrategia integral de datos?</th>
+                          <td  class="c1-1"></td>
+                          <td  class="c1-2"></td>
+                          <td  class="c1-3"></td>
+                          <td  class="c1-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">1.2 ¿Existe una persona con un rol definido que lidere la estrategia integral de datos y que tenga influencia transversal en las instituciones de gobierno?</th>
+                          <td  class="c2-1"></td>
+                          <td  class="c2-2"></td>
+                          <td  class="c2-3"></td>
+                          <td  class="c2-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">1.3 ¿Existe un modelo de gobernanza de datos institucionalizado que integre todos los tipos de datos, y elementos legales, tecnológicos, financieros, etc, con los que se relaciona?</th>
+                          <td  class="c3-1"></td>
+                          <td  class="c3-2"></td>
+                          <td  class="c3-3"></td>
+                          <td  class="c3-4"></td>
+                        </tr>
+                        <tr>
+                          <td rowspan="4" class="text-left pl-1 style-dimencion ">2. Financiamiento</th>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">2.1 ¿Existe un presupuesto asignado a una estrategia de datos? ¿Este presupuesto incluye fondos para fortalecer la oferta de datos desde el gobierno, así como la demanda desde otros sectores?</th>
+                          <td  class="c4-1"></td>
+                          <td  class="c4-2"></td>
+                          <td  class="c4-3"></td>
+                          <td  class="c4-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">2.2 ¿Existe coordinación con el Ministerio de Hacienda u oficina homóloga para lograr una sostenibilidad financiera de la política de datos?</th>
+                          <td  class="c5-1"></td>
+                          <td  class="c5-2"></td>
+                          <td  class="c5-3"></td>
+                          <td  class="c5-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">2.3 ¿Existe inversión del sector privado en la estrategia de datos?</th>
+                          <td  class="c6-1"></td>
+                          <td  class="c6-2"></td>
+                          <td  class="c6-3"></td>
+                          <td  class="c6-4"></td>
+                        </tr>
+                        <tr>
+                          <td rowspan="10" class="text-left pl-1 style-dimencion ">3. Marco normativo y legislativo </th>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">3.1 ¿Existe una política o instrumento normativo sobre transparencia y/o acceso a la Información?</th>
+                          <td  class="c7-1"></td>
+                          <td  class="c7-2"></td>
+                          <td  class="c7-3"></td>
+                          <td  class="c7-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">3.2 ¿Existe una política o instrumento normativo sobre privacidad y protección de datos?</th>
+                          <td  class="c8-1"></td>
+                          <td  class="c8-2"></td>
+                          <td  class="c8-3"></td>
+                          <td  class="c8-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">3.3 ¿Existe una política o instrumento normativo de datos abiertos?</th>
+                          <td  class="c9-1"></td>
+                          <td  class="c9-2"></td>
+                          <td  class="c9-3"></td>
+                          <td  class="c9-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">3.4 ¿Existe una política o instrumento normativo de datos en general? Es decir, que incluya la visión y procesos para la gestión de todos los tipos de datos que genera el gobierno.</th>
+                          <td  class="c10-1"></td>
+                          <td  class="c10-2"></td>
+                          <td  class="c10-3"></td>
+                          <td  class="c10-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">3.5 ¿Existe una política o instrumento normativo sobre conservación y preservación de archivos? ¿A qué nivel?</th>
+                          <td  class="c11-1"></td>
+                          <td  class="c11-2"></td>
+                          <td  class="c11-3"></td>
+                          <td  class="c11-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">3.6 ¿Existe una política o instrumento normativo nacional o local sobre Tecnologías de la Información y Comunicaciones (TICs) que incluyan temas de ciberseguridad y/o protección de datos?</th>
+                          <td  class="c12-1"></td>
+                          <td  class="c12-2"></td>
+                          <td  class="c12-3"></td>
+                          <td  class="c12-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">3.7 ¿Existe una normativa o lineamientos transversales sobre gestión de los datos, que integre elementos de gobernanza, interoperabilidad y calidad?</th>
+                          <td  class="c13-1"></td>
+                          <td  class="c13-2"></td>
+                          <td  class="c13-3"></td>
+                          <td  class="c13-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">3.8 ¿A qué nivel se vinculan las políticas de datos, gobierno digital, TICs, archivos, competencia, derechos de autor, y otras que se relacionan?</th>
+                          <td  class="c14-1"></td>
+                          <td  class="c14-2"></td>
+                          <td  class="c14-3"></td>
+                          <td  class="c15-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">3.9 ¿Existe una política o instrumento normativo sobre economía digital, que aborde temas sobre transferencia de datos entre el sector público y privado, y de man</th>
+                          <td  class="c15-1"></td>
+                          <td  class="c15-2"></td>
+                          <td  class="c15-3"></td>
+                          <td  class="c15-4"></td>
+                        </tr>
+                        <tr>
+                          <td rowspan="6" class="text-left pl-1 style-dimencion">4. Estructura organizacional y competencias institucionales </th>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">4.1 ¿Existe un equipo multidisciplinario o área dentro del gobierno encargado del diseño, implementación y evaluación de una estrategia de datos?</th>
+                          <td  class="c16-1"></td>
+                          <td  class="c16-2"></td>
+                          <td  class="c16-3"></td>
+                          <td  class="c16-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">4.2 ¿Existe un equipo técnico (ingenieros, programadores, científicos de datos, etc) dentro del gobierno encargado de dar asesoría en la implementación de la estrategia de datos ?</th>
+                          <td  class="c17-1"></td>
+                          <td  class="c17-2"></td>
+                          <td  class="c17-3"></td>
+                          <td  class="c17-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">4.3 ¿Existe un mapeo de las personas encargadas de la gestión de datos estratégicos 6 en las instituciones del gobierno? ¿O la identificación de “champions o referentes” en el uso de los mismos?</th>
+                          <td  class="c18-1"></td>
+                          <td  class="c18-2"></td>
+                          <td  class="c18-3"></td>
+                          <td  class="c18-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">4.4 ¿Existe un mapeo de iniciativas dentro del gobierno que utilicen datos estratégicos como insumo de algún producto o servicio?</th>
+                          <td  class="c19-1"></td>
+                          <td  class="c19-2"></td>
+                          <td  class="c19-3"></td>
+                          <td  class="c19-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">4.5 ¿Existe un mecanismo de coordinación interinstitucional en dónde se establezcan objetivos, competencias y acciones de seguimiento a una estrategia de datos?</th>
+                          <td  class="c20-1"></td>
+                          <td  class="c20-2"></td>
+                          <td  class="c20-3"></td>
+                          <td  class="c20-4"></td>
+                        </tr>
+                        <tr>
+                          <td rowspan="10" class="text-left pl-1 style-dimencion ">5. Datos: Recolección, uso, almacenamiento y distribución </th>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">5.1 ¿Existe un inventario nacional o local de datos que integre todos los tipos de datos que genera el gobierno? ¿Este inventario contiene los metadatos documentados de acuerdo a algún estándar?</th>
+                          <td  class="c21-1"></td>
+                          <td  class="c21-2"></td>
+                          <td  class="c21-3"></td>
+                          <td  class="c21-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">5.2 ¿Existe una categorización oficial de los tipos de datos del gobierno? (Personales, Abiertos, Públicos, Sensibles, etc)</th>
+                          <td  class="c22-1"></td>
+                          <td  class="c22-2"></td>
+                          <td  class="c22-3"></td>
+                          <td  class="c22-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">5.3 ¿Se conoce el grado de digitalización de los datos más estratégicos del gobierno? (Ej. zonas de riesgo, ubicación de escuelas, catastro, etc)</th>
+                          <td  class="c23-1"></td>
+                          <td  class="c23-2"></td>
+                          <td  class="c23-3"></td>
+                          <td  class="c23-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">5.4 En caso de que exista un inventario nacional o local, ¿Incluye los registros y sistemas de información públicos?</th>
+                          <td  class="c24-1"></td>
+                          <td  class="c24-2"></td>
+                          <td  class="c24-3"></td>
+                          <td  class="c24-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">5.5 ¿Existen lineamientos para el uso de estándares de datos o especificaciones técnicas en la generación, almacenamiento e intercambio de los mismos?</th>
+                          <td  class="c25-1"></td>
+                          <td  class="c25-2"></td>
+                          <td  class="c25-3"></td>
+                          <td  class="c25-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">5.6 ¿Existen procedimientos establecidos para la gestión, tratamiento y uso ético de los datos?</th>
+                          <td  class="c26-1"></td>
+                          <td  class="c26-2"></td>
+                          <td  class="c26-3"></td>
+                          <td  class="c26-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">5.7 ¿Existen casos documentados de uso de datos para la toma de decisiones en el diseño, implementación y evaluación de políticas públicas?</th>
+                          <td  class="c27-1"></td>
+                          <td  class="c27-2"></td>
+                          <td  class="c27-3"></td>
+                          <td  class="c27-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">5.8 ¿Existen estudios o evaluaciones para determinar el valor económico de bases de datos de gobierno? (Estudios de mercado, costo/beneficio, medición de impacto)</th>
+                          <td  class="c28-1"></td>
+                          <td  class="c28-2"></td>
+                          <td  class="c28-3"></td>
+                          <td  class="c28-4"></td>
+                        </tr>
+                         <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">5.9 ¿Existen estudios o evaluaciones para determinar el valor económico de bases de datos de gobierno? (Estudios de mercado, costo/beneficio, medición  de impacto)</th>
+                          <td  class="c40-1"></td>
+                          <td  class="c40-2"></td>
+                          <td  class="c40-3"></td>
+                          <td  class="c40-4"></td>
+                        </tr>
+                        
+                        <tr>
+                          <td rowspan="4" class="text-left pl-1 style-dimencion ">6. Construcción de capacidades </th>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">6.1 ¿Se han tomado cursos de capacitación dirigidos a personas servidoras públicas sobre temas de gestión y uso de datos?</th>
+                          <td  class="c29-1"></td>
+                          <td  class="c29-2"></td>
+                          <td  class="c29-3"></td>
+                          <td  class="c29-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">6.2 ¿Existe un organismo o área de gobierno encargada de la formación de personas servidoras públicas? ¿Contempla temáticas sobre gestión y uso de datos?</th>
+                          <td  class="c30-1"></td>
+                          <td  class="c30-2"></td>
+                          <td  class="c30-3"></td>
+                          <td  class="c30-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">6.3 ¿Se tiene mapeadas comunidades de práctica al interior de gobierno que intercambien experiencias respecto a la gestión y uso de datos?</th>
+                          <td  class="c31-1"></td>
+                          <td  class="c31-2"></td>
+                          <td  class="c31-3"></td>
+                          <td  class="c31-4"></td>
+                        </tr>
+                        
+                        <tr>
+                          <td rowspan="5" class="text-left pl-1 style-dimencion ">7. Demanda y comunidad de usuarios</th>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">7.1 ¿Existe un mecanismo de diálogo y coordinación con sociedad civil, sector privado y academia respecto a proyectos de datos?</th>
+                          <td  class="c32-1"></td>
+                          <td  class="c32-2"></td>
+                          <td  class="c32-3"></td>
+                          <td  class="c32-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">7.2 ¿Existe un estudio sobre los actores (empresas/organizacio nes/grupos de interés), así como de la oferta de productos y servicios de datos en el país o gobierno subnacional?</th>
+                          <td  class="c33-1"></td>
+                          <td  class="c33-2"></td>
+                          <td  class="c33-3"></td>
+                          <td  class="c33-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">7.3 ¿Existen programas/eventos/pil otos para promover el uso e intercambio de datos entre instituciones públicas y con actores fuera de gobierno?</th>
+                          <td  class="c34-1"></td>
+                          <td  class="c34-2"></td>
+                          <td  class="c34-3"></td>
+                          <td  class="c34-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">7.4 ¿Existe una estrategia de incentivos o beneficios fiscales para empresas u organizaciones que compartan y utilicen datos de valor?</th>
+                          <td  class="c35-1"></td>
+                          <td  class="c35-2"></td>
+                          <td  class="c35-3"></td>
+                          <td  class="c35-4"></td>
+                        </tr>
+                        
+                        <tr>
+                          <td rowspan="5" class="text-left pl-1 style-dimencion ">8. Tecnología y mecanismos de transferencia</th>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">8.1 ¿Existe un catálogo público o privado para el acceso y consumo masivo (bulk) a fuentes de datos por medio de APIs? ¿Estas son utilizadas solo por el gobierno mismo o son abiertas a otros actores?</th>
+                          <td  class="c36-1"></td>
+                          <td  class="c36-2"></td>
+                          <td  class="c36-3"></td>
+                          <td  class="c36-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">8.2 ¿Existe un directorio de servicios o herramientas de intercambio de datos entre usuarios internos y externos de gobierno? ¿Este directorio incluye manuales y documentación necesaria para el uso?</th>
+                          <td  class="c37-1"></td>
+                          <td  class="c37-2"></td>
+                          <td  class="c37-3"></td>
+                          <td  class="c37-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">8.3 ¿Existe un espacio de pruebas (sandbox) tecnológico en donde generadores y usuarios puedan experimentar modelos de transferencia de datos para fines específicos?</th>
+                          <td  class="c38-1"></td>
+                          <td  class="c38-2"></td>
+                          <td  class="c38-3"></td>
+                          <td  class="c38-4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-left pl-1 style-cq">8.4 ¿Existen iniciativas o pilotos sobre la construcción de un mercado de datos a nivel nacional o local? ¿Se ha considerado el intercambio y transferencia de datos transfronteriza?</th>
+                          <td  class="c39-1"></td>
+                          <td  class="c39-2"></td>
+                          <td  class="c39-3"></td>
+                          <td  class="c39-4"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+
+                     <a href="#step-box"><button type="button" class="btn float-right mt-4 btn-style step-box-inicio ml-1">Volver</button></a>
+                     <!-- <button type="button" id="btnCrearPdf" class="btn float-right mt-4 btn-style  ml-1 btn-pdf btnCrearPdf"> <i class="fa-solid fa-file-arrow-down"></i></button> -->
+                     <!-- <button id="btnCrearPdf">Click aquí</button> -->
+                  </div>
+                </div>
+
+              <!-- respuesta -->
+                <div class="box-result d-none" id="step-box-final-pdf">
+                
+                  <div class="col-12 col-md-12 mb-2 p-2" style="background-color: #212121; height: 80px;" id="header-pdf">
+                      <div class="">
+                                <svg
+                                  width="80px"
+                                  viewBox="0 0 109 58"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <title>Public Digital</title>
+                                  <path
+                                    d="M0 31.3801V6.46445H4.54929V8.45099C5.59401 7.13785 7.54866 6.22876 9.57071 6.22876C14.6592 6.22876 17.6923 9.62912 17.6923 15.6898C17.6923 21.8177 14.3559 25.1507 9.46961 25.1507C7.44756 25.1507 5.49291 24.3763 4.54929 23.0632V31.3797H0V31.3801ZM4.44818 15.6901C4.44818 20.4036 6.40283 21.3803 8.79559 21.3803C11.1884 21.3803 13.0419 19.7305 13.0419 15.6901C13.0419 11.65 11.1884 10.0001 8.79559 10.0001C6.40283 9.99982 4.44818 10.9763 4.44818 15.6901Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M31.307 24.9153V23.1644C30.633 23.8715 28.982 25.151 26.0163 25.151C21.9051 25.151 19.7483 22.2553 19.7483 18.8547V6.46436H24.2976V17.9792C24.2976 20.3361 25.5108 21.4469 27.4655 21.4469C30.0267 21.4469 31.2063 19.6287 31.2063 17.3395V6.46436H35.7555V24.915H31.307V24.9153Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M38.7549 24.9153V0H43.3042V8.45122C44.3489 7.13808 46.3035 6.22898 48.3256 6.22898C53.4141 6.22898 56.4472 9.62934 56.4472 15.69C56.4472 21.818 53.1108 25.151 48.2245 25.151C46.2024 25.151 44.2478 24.3766 43.3042 23.0634V24.9153H38.7549ZM43.2031 15.69C43.2031 20.4035 45.1577 21.3802 47.5505 21.3802C49.9432 21.3802 51.7968 19.7304 51.7968 15.69C51.7968 11.6499 49.9432 10 47.5505 10C45.1577 9.99972 43.2031 10.9762 43.2031 15.69Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M58.6041 24.9153V0H63.1534V24.9153H58.6041Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M66.1532 4.34345V0H70.7025V4.34345H66.1532ZM66.1532 24.9153V6.46435H70.7025V24.915H66.1532V24.9153Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M72.8591 15.8247C72.8591 9.394 76.5999 6.229 81.6547 6.229C86.2043 6.229 89.4396 8.65326 89.9111 13.2657H85.2607C85.0245 11.2455 83.7439 9.99974 81.7221 9.99974C79.3297 9.99974 77.5435 11.6496 77.5435 15.6897C77.5435 19.7301 79.2623 21.3799 81.6214 21.3799C83.576 21.3799 85.0248 20.2688 85.261 18.2486H89.9114C89.5748 22.2554 86.845 25.151 81.7225 25.151C76.5662 25.151 72.8591 21.9523 72.8591 15.8247Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M31.2776 51.3001V49.4479C30.334 50.7614 28.2783 51.5358 26.2562 51.5358C21.3696 51.5358 18.1346 48.2025 18.1346 42.0748C18.1346 36.2165 21.3025 32.6138 26.391 32.6138C28.4131 32.6138 30.2329 33.5229 31.2776 34.8364V26.3845H35.8269V51.3001H31.2776ZM22.785 42.0745C22.785 46.1149 24.6386 47.7648 27.0313 47.7648C29.4238 47.7648 31.3787 46.788 31.3787 42.0745C31.3787 37.361 29.4241 36.3846 27.0313 36.3846C24.6386 36.3846 22.785 38.0344 22.785 42.0745Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M38.8267 30.7283V26.3845H43.3759V30.7283H38.8267ZM38.8267 51.3001V32.8492H43.3759V51.3001H38.8267Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M53.5492 32.6133C55.908 32.6133 57.6604 33.455 58.604 34.8018L58.6377 32.8486H63.1536V50.9965C63.1536 54.4646 61.1316 57.9999 54.5939 57.9999C47.6182 57.9999 46.1687 54.3972 46.1013 51.771H50.7521C50.7521 52.4107 51.0554 54.3636 54.4591 54.3636C57.1889 54.3636 58.604 53.3875 58.604 50.7609V48.4039C57.7278 49.6161 55.8406 50.5252 53.2796 50.5252C50.8195 50.5252 45.731 48.9763 45.731 41.7372C45.7306 35.3409 49.8421 32.6133 53.5492 32.6133ZM54.4925 47.0911C56.5483 47.0911 58.6374 45.8117 58.6374 41.7376C58.6374 37.6635 56.5479 36.3843 54.4925 36.3843C52.4371 36.3843 50.3139 37.6635 50.3139 41.7376C50.3139 45.8117 52.4371 47.0911 54.4925 47.0911Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M66.1532 30.7283V26.3845H70.7025V30.7283H66.1532ZM66.1532 51.3001V32.8492H70.7025V51.3001H66.1532Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M79.8691 51.4685C76.2968 51.4685 74.9821 50.189 74.9821 47.1587V36.6536H72.1853V32.8489H74.9821V27.7317H79.5318V32.8489H83.677V36.6536H79.5318V45.8456C79.5318 47.2261 79.9025 47.4614 81.3853 47.4614C82.2615 47.4614 83.2726 47.3941 83.2726 47.3941V51.2322C83.2726 51.2325 81.79 51.4685 79.8691 51.4685Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M96.6513 39.3472V38.7075C96.6513 37.2597 96.0447 36.3172 93.3153 36.3172C89.8778 36.3172 89.8104 38.2364 89.8104 38.8425H85.4293C85.4293 36.1152 86.5751 32.6135 93.4498 32.6135C99.9874 32.6135 101.201 35.8795 101.201 38.5395V48.7072C101.201 50.1214 101.437 51.3002 101.437 51.3002H96.7862V49.448C95.5055 50.7614 93.652 51.5358 91.057 51.5358C87.4173 51.5358 84.6542 49.448 84.6542 45.7446C84.6542 41.5361 88.6646 40.5597 90.2819 40.3237L96.6513 39.3472ZM96.6513 42.8153C96.6513 42.8153 93.4498 43.2863 92.0006 43.556C91.2592 43.6907 90.5515 43.859 90.046 44.2628C89.6079 44.5995 89.3383 45.1045 89.3383 45.7779C89.3383 46.283 89.5405 48.0005 92.068 48.0005C93.5509 48.0005 94.8652 47.4618 95.5729 46.7544C96.4491 45.8456 96.6513 44.6668 96.6513 43.7917V42.8153Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M104.2 51.3001V26.3845H108.75V51.3001H104.2Z"
+                                    fill="white"
+                                  ></path>
+                                </svg>
+                       <!-- <svg class="svg-navbar"  viewBox="0 0 109 58" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Public Digital</title><path d="M0 31.3801V6.46445H4.54929V8.45099C5.59401 7.13785 7.54866 6.22876 9.57071 6.22876C14.6592 6.22876 17.6923 9.62912 17.6923 15.6898C17.6923 21.8177 14.3559 25.1507 9.46961 25.1507C7.44756 25.1507 5.49291 24.3763 4.54929 23.0632V31.3797H0V31.3801ZM4.44818 15.6901C4.44818 20.4036 6.40283 21.3803 8.79559 21.3803C11.1884 21.3803 13.0419 19.7305 13.0419 15.6901C13.0419 11.65 11.1884 10.0001 8.79559 10.0001C6.40283 9.99982 4.44818 10.9763 4.44818 15.6901Z" fill="white"></path><path d="M31.307 24.9153V23.1644C30.633 23.8715 28.982 25.151 26.0163 25.151C21.9051 25.151 19.7483 22.2553 19.7483 18.8547V6.46436H24.2976V17.9792C24.2976 20.3361 25.5108 21.4469 27.4655 21.4469C30.0267 21.4469 31.2063 19.6287 31.2063 17.3395V6.46436H35.7555V24.915H31.307V24.9153Z" fill="white"></path><path d="M38.7549 24.9153V0H43.3042V8.45122C44.3489 7.13808 46.3035 6.22898 48.3256 6.22898C53.4141 6.22898 56.4472 9.62934 56.4472 15.69C56.4472 21.818 53.1108 25.151 48.2245 25.151C46.2024 25.151 44.2478 24.3766 43.3042 23.0634V24.9153H38.7549ZM43.2031 15.69C43.2031 20.4035 45.1577 21.3802 47.5505 21.3802C49.9432 21.3802 51.7968 19.7304 51.7968 15.69C51.7968 11.6499 49.9432 10 47.5505 10C45.1577 9.99972 43.2031 10.9762 43.2031 15.69Z" fill="white"></path><path d="M58.6041 24.9153V0H63.1534V24.9153H58.6041Z" fill="white"></path><path d="M66.1532 4.34345V0H70.7025V4.34345H66.1532ZM66.1532 24.9153V6.46435H70.7025V24.915H66.1532V24.9153Z" fill="white"></path><path d="M72.8591 15.8247C72.8591 9.394 76.5999 6.229 81.6547 6.229C86.2043 6.229 89.4396 8.65326 89.9111 13.2657H85.2607C85.0245 11.2455 83.7439 9.99974 81.7221 9.99974C79.3297 9.99974 77.5435 11.6496 77.5435 15.6897C77.5435 19.7301 79.2623 21.3799 81.6214 21.3799C83.576 21.3799 85.0248 20.2688 85.261 18.2486H89.9114C89.5748 22.2554 86.845 25.151 81.7225 25.151C76.5662 25.151 72.8591 21.9523 72.8591 15.8247Z" fill="white"></path><path d="M31.2776 51.3001V49.4479C30.334 50.7614 28.2783 51.5358 26.2562 51.5358C21.3696 51.5358 18.1346 48.2025 18.1346 42.0748C18.1346 36.2165 21.3025 32.6138 26.391 32.6138C28.4131 32.6138 30.2329 33.5229 31.2776 34.8364V26.3845H35.8269V51.3001H31.2776ZM22.785 42.0745C22.785 46.1149 24.6386 47.7648 27.0313 47.7648C29.4238 47.7648 31.3787 46.788 31.3787 42.0745C31.3787 37.361 29.4241 36.3846 27.0313 36.3846C24.6386 36.3846 22.785 38.0344 22.785 42.0745Z" fill="white"></path><path d="M38.8267 30.7283V26.3845H43.3759V30.7283H38.8267ZM38.8267 51.3001V32.8492H43.3759V51.3001H38.8267Z" fill="white"></path><path d="M53.5492 32.6133C55.908 32.6133 57.6604 33.455 58.604 34.8018L58.6377 32.8486H63.1536V50.9965C63.1536 54.4646 61.1316 57.9999 54.5939 57.9999C47.6182 57.9999 46.1687 54.3972 46.1013 51.771H50.7521C50.7521 52.4107 51.0554 54.3636 54.4591 54.3636C57.1889 54.3636 58.604 53.3875 58.604 50.7609V48.4039C57.7278 49.6161 55.8406 50.5252 53.2796 50.5252C50.8195 50.5252 45.731 48.9763 45.731 41.7372C45.7306 35.3409 49.8421 32.6133 53.5492 32.6133ZM54.4925 47.0911C56.5483 47.0911 58.6374 45.8117 58.6374 41.7376C58.6374 37.6635 56.5479 36.3843 54.4925 36.3843C52.4371 36.3843 50.3139 37.6635 50.3139 41.7376C50.3139 45.8117 52.4371 47.0911 54.4925 47.0911Z" fill="white"></path><path d="M66.1532 30.7283V26.3845H70.7025V30.7283H66.1532ZM66.1532 51.3001V32.8492H70.7025V51.3001H66.1532Z" fill="white"></path><path d="M79.8691 51.4685C76.2968 51.4685 74.9821 50.189 74.9821 47.1587V36.6536H72.1853V32.8489H74.9821V27.7317H79.5318V32.8489H83.677V36.6536H79.5318V45.8456C79.5318 47.2261 79.9025 47.4614 81.3853 47.4614C82.2615 47.4614 83.2726 47.3941 83.2726 47.3941V51.2322C83.2726 51.2325 81.79 51.4685 79.8691 51.4685Z" fill="white"></path><path d="M96.6513 39.3472V38.7075C96.6513 37.2597 96.0447 36.3172 93.3153 36.3172C89.8778 36.3172 89.8104 38.2364 89.8104 38.8425H85.4293C85.4293 36.1152 86.5751 32.6135 93.4498 32.6135C99.9874 32.6135 101.201 35.8795 101.201 38.5395V48.7072C101.201 50.1214 101.437 51.3002 101.437 51.3002H96.7862V49.448C95.5055 50.7614 93.652 51.5358 91.057 51.5358C87.4173 51.5358 84.6542 49.448 84.6542 45.7446C84.6542 41.5361 88.6646 40.5597 90.2819 40.3237L96.6513 39.3472ZM96.6513 42.8153C96.6513 42.8153 93.4498 43.2863 92.0006 43.556C91.2592 43.6907 90.5515 43.859 90.046 44.2628C89.6079 44.5995 89.3383 45.1045 89.3383 45.7779C89.3383 46.283 89.5405 48.0005 92.068 48.0005C93.5509 48.0005 94.8652 47.4618 95.5729 46.7544C96.4491 45.8456 96.6513 44.6668 96.6513 43.7917V42.8153Z" fill="white"></path><path d="M104.2 51.3001V26.3845H108.75V51.3001H104.2Z" fill="white"></path></svg> -->
+                       <div class="image-pdf-1"></div>
+                       <div class="image-pdf-2"><img src="images/logos-es-b.png" alt=""  class="img-bid mt-2"></div>
+                      </div>
+                    </div>
+                
+                   
+                    <div class="text-center" id="pdf">
+                        <!-- <span>PREGUNTA /3</span> -->
+                        <h4 class="pb-2">Resultado obtenido </h4> 
+                          <div class="tablero">
+                            <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
+                            <span class="badge badge-primary">Nulo</span>
+                            <span class="badge badge-secondary">Bajo</span>
+                            <span class="badge badge-success">Medio</span>
+                            <span class="badge badge-danger">Alto</span>
+                          </div>
+                  
+                            <table class="table ">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Dimensión
+
+                                    
+                                  </th>
+                               
+
+                                  
+                                </tr>
+
+
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row" class="text-left pl-1">1. Liderazgo</th>
+                                  <td colspan="3" class="c1">1.1</td>
+                                  <td colspan="3" class="c2">1.2</td>
+                                  <td colspan="3" class="c3">1.3</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="text-left pl-1">2. Financiamiento</th>
+                                  <td colspan="3" class="c4">2.1</td>
+                                  <td colspan="3" class="c5">2.2</td>
+                                  <td colspan="3" class="c6">2.3</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="text-left pl-1">3. Marco normativo y legislativo </th>
+                                  <td class="celda c7">3.1</td>
+                                  <td class="celda c8">3.2</td>
+                                  <td class="celda c9">3.3</td>
+                                  <td class="celda c10">3.4</td>
+                                  <td class="celda c11">3.5</td>
+                                  <td class="celda c12">3.6</td>
+                                  <td class="celda c13">3.7</td>
+                                  <td class="celda c14">3.8</td>
+                                  <td class="celda c15">3.9</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="text-left pl-1">4. Estructura organizacional y competencias institucionales </th>
+                                  <td colspan="2" class="c16">4.1</td>
+                                  <td colspan="2" class="c17">4.2</td>
+                                  <td colspan="2" class="c18">4.3</td>
+                                  <td colspan="2" class="c19">4.4</td>
+                                  <td class="c20"></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="text-left pl-1">5. Datos: Recolección, uso, almacenamiento y distribución </th>
+                                  <td class="c21">5.1</td>
+                                  <td class="c22">5.2</td>
+                                  <td class="c23">5.3</td>
+                                  <td class="c24">5.4</td>
+                                  <td class="c25">5.5</td>
+                                  <td class="c26">5.6</td>
+                                  <td class="c27">5.7</td>
+                                  <td class="c28">5.8</td>
+                                  <td class="c29">5.9</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="text-left pl-1">6. Construcción de capacidades</th>
+                                  <td colspan="3" class="c29">6.1</td>
+                                  <td colspan="3" class="c30">6.2</td>
+                                  <td colspan="3" class="c31">6.3</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="text-left pl-1">7. Demanda y comunidad de usuarios</th>
+                                  <td colspan="2" class="c32">7.1</td>
+                                  <td colspan="3" class="c33">7.2</td>
+                                  <td colspan="2" class="c34">7.3</td>
+                                  <td colspan="2" class="c35">7.4</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="text-left pl-1">8. Tecnología y mecanismos de transferencia</th>
+                                  <td colspan="2" class="c36">8.1</td>
+                                  <td colspan="3" class="c37">8.2</td>
+                                  <td colspan="2" class="c38">8.3</td>
+                                  <td colspan="2" class="c39">8.4</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                       
+
+                     </div>
+                </div>
+            
+
+                
+              </div> <!--- cierre box-->
+
+
+ 
+
+            </div>
+          </div> <!--- cierre autoevalución-->
+<!-------------------------------------------------------------------------------- -->
+      </div>
+		</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+  <script type="text/javascript">
+      $(document).ready(function() {
+  
+       var arrayGuardar = [];  
+       var respuestas;
+
+
+
+        // resultado --------------------------------
+        $(".btn-resultado-1").on("click", function(){
+
+          $(".boxg-2").removeClass("d-none");
+          $(".boxg-1").addClass("d-none");
+
+        });
+
+
+        $(".btn-resultado-2").on("click", function(){
+          $(".boxg-3").removeClass("d-none");
+          $(".boxg-2").addClass("d-none");
+
+        });
+
+        $(".btn-resultado-3").on("click", function(){
+          $(".boxg-4").removeClass("d-none");
+          $(".boxg-3").addClass("d-none");
+
+        });
+
+        $(".btn-resultado-4").on("click", function(){
+         
+          $(".boxg-5").removeClass("d-none");
+          $(".boxg-4").addClass("d-none");
+
+        });
+
+        $(".btn-resultado-5").on("click", function(){
+          $(".boxg-6").removeClass("d-none");
+          $(".boxg-5").addClass("d-none");
+
+        });
+
+        $(".btn-resultado-6").on("click", function(){
+         
+          $(".boxg-7").removeClass("d-none");
+          $(".boxg-6").addClass("d-none");
+        });
+
+        $(".btn-resultado-7").on("click", function(){
+         
+          $(".boxg-8").removeClass("d-none");
+          $(".boxg-7").addClass("d-none");
+
+        });
+
+        $(".btn-resultado-8").on("click", function(){
+         
+          $(".box-result-8").removeClass("d-none");
+          $(".boxg-8").addClass("d-none");
+          
+
+            for (let num = 1; num < 41; num++) {
+
+              var pregunta = $("input[name=modulo1-q"+num+"]:checked").val();
+
+              respuestas = respuestas + pregunta;
+
+              const map = {
+                '1': "#F5CDCC",
+                '2': "#FCE5CD",
+                '3': "#E3F2DC",
+                '4': "#C6DBF7",
+              }
+
+              var colorCelada = map[pregunta] ?? 'N/A';
+
+              $(".c"+num+"-1").removeAttr("style");
+              $(".c"+num+"-2").removeAttr("style");
+              $(".c"+num+"-3").removeAttr("style");
+              $(".c"+num+"-4").removeAttr("style");
+              $(".c"+num+"-"+pregunta).attr("style","background-color:"+colorCelada);
+            }
+
+
+            // Respuetas caja pdf
+             for (let num = 1; num < 40; num++) {
+
+              var pregunta = $("input[name=modulo1-q"+num+"]:checked").val();
+
+              const map = {
+                '1': "#F5CDCC",
+                '2': "#FCE5CD",
+                '3': "#E3F2DC",
+                '4': "#C6DBF7",
+              }
+
+              var colorCelada = map[pregunta] ?? 'N/A';
+              $(".c"+num).removeAttr("style");
+              $(".c"+num).attr("style","background-color:"+colorCelada);
+            }
+
+
+        });
+
+
+        $(".btn-pdf").on("click", function(){
+
+          // window.location.href = 'file:///C:/Users/IsmaA/Downloads/SEP29/public_DATAv3/archivopdf.php?respuestas='+respuestas;        
+          identificadorTiempoDeEspera = setTimeout(funcionConRetraso, 5000);
+          
+        });
+
+        function funcionConRetraso() {
+          // $("#header-pdf").addClass("d-none");
+          $("#step-box-final-pdf").addClass("d-none");
+
+        }
+
+
+
+
+      // --------------------------------------------------
+       
+        // resultado --------------------------------
+        $(".btn-back-5").on("click", function(){
+
+        $(".boxg-1").removeClass("d-none");
+        $(".boxg-2").addClass("d-none");
+
+        });
+
+
+        $(".btn-back-14").on("click", function(){
+        $(".boxg-2").removeClass("d-none");
+        $(".boxg-3").addClass("d-none");
+        });
+
+        $(".btn-back-19").on("click", function(){
+        $(".boxg-3").removeClass("d-none");
+        $(".boxg-4").addClass("d-none");
+
+        });
+
+        $(".btn-back-27").on("click", function(){
+
+        $(".boxg-4").removeClass("d-none");
+        $(".boxg-5").addClass("d-none");
+
+        });
+
+        $(".btn-back-30").on("click", function(){
+        $(".boxg-5").removeClass("d-none");
+        $(".boxg-6").addClass("d-none");
+
+        });
+
+        $(".btn-back-34").on("click", function(){
+        $(".boxg-6").removeClass("d-none");
+        $(".boxg-7").addClass("d-none");
+        });
+
+        $(".btn-back-39").on("click", function(){
+
+        $(".boxg-7").removeClass("d-none");
+        $(".boxg-8").addClass("d-none");
+
+        });
+
+        $(".step-box-inicio").on("click", function(){
+
+          $(".boxg-1").removeClass("d-none");
+          $(".boxg-8").addClass("d-none");
+
+        });
+                  
+        
+
+
+      });
+  </script>
+  </body>
+</html>
