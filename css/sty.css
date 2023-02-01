@@ -207,7 +207,7 @@ samp {
   padding-left: 3px;
 }
 .contenedor-texto {
-  padding: 4rem 3rem 3rem 4rem;
+    padding: 3rem 2rem 2rem 1rem;
 }
 @media (max-width: 576px) {
   .contenedor-texto {
