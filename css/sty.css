@@ -227,6 +227,40 @@ samp {
   font-size: 11px;
 }
 
+
+/*  */
+.titulo{
+  width: 17px;
+  font-size: 11px;
+  color: rgb(253, 74, 73);
+  font-weight: 400!important;
+  text-align: center!important;
+  
+}
+
+.style-c {
+  font-weight: normal;
+  font-size: 12px;
+  width: 80%;
+
+}
+.recom-style{
+  text-align: justify;
+}
+
+.recom-style b{
+  font-weight: 600!important;
+}
+
+.recom-style span{
+  font-weight: 400!important;
+  font-size: 11px;
+  color: rgb(253, 74, 73);
+}
+
+/*  */
+
+
 .style-cq {
   font-weight: normal;
   font-size: 12px;
@@ -283,8 +317,20 @@ samp {
 .badge {
   width: 56px;
   height: 20px;
-      margin-left: 5px;
+  margin-left: 5px;
 }
+
+.badge-rec {
+  width: 100px;
+  height: 60px;
+  margin-left: 7px;
+  border-radius: 0.25rem;
+}
+/* .pregunta-pdf{
+  font-weight: 400;
+  color: #495057;
+  font-size: 15px;
+} */
 
 .tablero {
   /* white-space: nowrap; */

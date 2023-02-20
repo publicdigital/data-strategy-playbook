@@ -263,10 +263,6 @@ a:not([href]):not([tabindex]):focus {
 a:not([href]):not([tabindex]):focus {
   outline: 0;
 }
-/* .titulo5 {
-  font-weight: 800;
-  font-size: 2rem;
-} */
 
 pre,
 code,
@@ -12322,9 +12318,20 @@ a[data-toggle="collapse"] {
     font-size: 8px !important;
     width: 35% !important;
   }
+   .style-cq {
+    font-weight: normal;
+    font-size: 7px !important;
+    width: 80% !important;
+  }
+
+
 
   .style-dimencion {
-    width: 9px;
+    width: 5px;
+    font-size: 7px;
+  }
+  .titulo{
+    width: 5px;
     font-size: 7px;
   }
   .titlepage h2 {
