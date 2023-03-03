@@ -111,11 +111,15 @@ ol {
 } */
 
 table thead {
-  font-size: 14px;
+    text-align: center;
+    font-size: 11px;
+    background-color: #212121 !important;
+    color: white;
+    padding: 13px!important;
 }
 
 table tbody {
-  font-size: 13px;
+  font-size: 10px;
 }
 
 [tabindex="-1"]:focus {
@@ -669,6 +673,9 @@ pre code {
   .container {
     max-width: 540px;
   }
+
+
+
 }
 
 @media (min-width: 768px) {
@@ -1999,14 +2006,12 @@ pre code {
   color: #212529;
 }
 
-#pdf .table th,
-.table td {
-  /* vertical-align: top; */
-  /* border-top: 1px solid #dee2e6; */
-  border: 1px solid #dee2e6;
-  font-size: 10px;
-
-  
+#pdf .table th, .table td {
+    /* vertical-align: top; */
+    /* border-top: 1px solid #dee2e6; */
+    border: 1px solid #dee2e6;
+    font-size: 10px;
+    padding: 13px;
 }
 
 #pdf table {
@@ -2024,6 +2029,7 @@ pre code {
 
 .table-bordered th,
 .table-bordered td {
+  padding: 13px;
   border: 2px solid #dee2e6!important;
 }
 
@@ -2307,6 +2313,15 @@ pre code {
       left: 117px;
       top: 8px;
   }
+
+    .style-dimencion b {
+    font-size: 7px!important;
+  }
+
+  .style-dimencion a {
+      font-size: 7px!important;
+  }
+
 }
 
 @media (max-width: 767.98px) {
@@ -9277,11 +9292,11 @@ button.bg-dark:focus {
 }
 /* BOTON IDIOMA */
 .in{
-  color: rgb(253, 74, 73);
+color: #FD4A49;
   font-size: 12px;
 }
 .es{
-  color: rgb(253, 74, 73);
+color: #FD4A49;
   font-size: 12px;
 }
 .check{
@@ -12121,7 +12136,7 @@ h5,
 }
 
 #sidebar ul li a:hover {
-  color: rgb(253, 74, 73);
+color: #FD4A49;
   font-weight: 600;
 
   /* background: #2f89fc; */
@@ -12135,7 +12150,7 @@ h5,
 
 #sidebar ul li.active > a:hover {
   /* background: #2f89fc; */
-  color: rgb(253, 74, 73);
+color: #FD4A49;
   font-weight: 600;
   border-bottom: 1px solid #2f89fc;
 }
@@ -12372,7 +12387,7 @@ a[data-toggle="collapse"] {
 }
 
 samp {
-  color: rgb(253, 74, 73);
+color: #FD4A49;
 }
 
 .callout-container {
@@ -12468,7 +12483,7 @@ samp {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: rgb(253, 74, 73);
+color: #FD4A49;
 }
 
 .step-box,
@@ -12541,7 +12556,7 @@ samp {
 .btn-style {
   background-color: white;
   border-color: rgb(253, 74, 73);
-  color: rgb(253, 74, 73);
+  color: #FD4A49;
   font-weight: bolder;
 }
 
@@ -12550,6 +12565,21 @@ samp {
   color: #f7f7f9;
   font-weight: bolder;
 }
+
+.btn-back {
+  background-color: white;
+  border-color: rgb(253, 74, 73);
+  color: #FD4A49;
+  font-weight: bolder;
+}
+
+.btn-back:hover {
+  background-color: rgb(253, 74, 73);
+  color: #f7f7f9;
+  font-weight: bolder;
+}
+
+
 
 .style-r {
   border-left: solid 5px rgb(253, 74, 73);
@@ -12579,14 +12609,14 @@ samp {
 .style-dimencion a{
     text-decoration: underline;
     font-size: 10px;
-    color: rgb(253, 74, 73);
+  color: #FD4A49;
 }
 
 /*  */
 .titulo{
   width: 17px;
   font-size: 11px;
-  color: rgb(253, 74, 73);
+color: #FD4A49;
   font-weight: 400!important;
   text-align: center!important;
   
@@ -12624,26 +12654,26 @@ samp {
 .recom-style span{
   font-weight: 400!important;
   font-size: 12px;
-  color: rgb(253, 74, 73);
+color: #FD4A49;
 }
 
 #pdf .recom-style span{
   font-weight: 400!important;
   font-size: 10px;
-  color: rgb(253, 74, 73);
+  color: #FD4A49;
 }
 
 
 .recom-style a{
-   color: rgb(253, 74, 73);
+ color: #FD4A49;
 }
 .style-b a{
-   color: rgb(253, 74, 73);
+ color: #FD4A49;
 }
 
 .pregunta-pdf{
   font-size: 15px;
-   color: rgb(253, 74, 73);
+ color: #FD4A49;
 }
 
 /*  */
@@ -12674,7 +12704,7 @@ samp {
 .btn-style-nav {
   background-color: white;
   border-color: rgb(253, 74, 73);
-  color: rgb(253, 74, 73);
+color: #FD4A49;
   font-weight: bolder;
 }
 
