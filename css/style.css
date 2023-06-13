@@ -241,14 +241,21 @@ sup {
   top: -0.5em;
 }
 
+.icon-n{
+  font-size: 20px!important;
+}
 a {
-  color: #007bff;
+  
   text-decoration: none;
   background-color: transparent;
 }
 
+
+tr a{
+  color: #7cc7d6;
+}
 a:hover {
-  color: #0056b3;
+  color: #3169a3;
   text-decoration: underline;
 }
 
@@ -682,6 +689,14 @@ pre code {
   .container {
     max-width: 720px;
   }
+
+    .m-portada {
+      padding: 3rem 2rem 1rem 2rem;
+      background-color: rgb(124, 199, 214);
+      margin-bottom: -35px;
+      height: 64vh;
+      page-break-after: always;
+  }
 }
 
 @media (min-width: 992px) {
@@ -695,6 +710,47 @@ pre code {
     max-width: 1140px;
   }
 }
+@media (min-width: 1300px) {
+  .m-portada {
+      padding-top: 10px;
+      height: 65vh;
+      background-color: #7cc7d6;
+      padding: 0rem 9rem 1rem 7rem;
+  }
+}
+
+@media (min-width: 2560px) {
+ .m-portada {
+    padding-top: 130px;
+    height: 55vh;
+    background-color: #7cc7d6;
+    padding: 10rem 12rem 2rem 11rem;
+    
+}
+}
+
+
+@media (min-width: 1400px) {
+  .m-portada {
+    padding-top: 150px;
+    height: 45vh;
+    background-color: #7cc7d6;
+    padding: 7rem 9rem 1rem 7rem;
+    
+  }
+}
+
+@media (min-width: 1600px) {
+ .m-portada {
+    padding-top: 150px;
+    height: 42vh;
+    margin-top: 2rem;
+    background-color: #7cc7d6;
+    padding: 3rem 7rem 1rem 7rem;
+}
+}
+
+
 
 .container-fluid {
   width: 100%;
@@ -9272,11 +9328,11 @@ button.bg-dark:focus {
   z-index: 1030;
 }
 .m-portada {
-    padding-top: 130px;
-    height: 80vh;
+   padding-top: 76px;
     background-color: #7cc7d6;
-    padding-inline: 119px;
     margin-bottom: -35px;
+   
+    
 }
 /* BOTON IDIOMA */
 .in{
@@ -12226,6 +12282,10 @@ a[data-toggle="collapse"] {
     display: none;
   }
 }
+
+
+
+
 
 #content {
   width: 100%;
