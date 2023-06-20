@@ -149,7 +149,6 @@ p {
 
 .image-pdf-1 {
     background-color:#7cc7d6;
-;
     width: 2px;
     height: 43px;
     position: absolute;
@@ -694,7 +693,7 @@ pre code {
       padding: 3rem 2rem 1rem 2rem;
       background-color: rgb(124, 199, 214);
       margin-bottom: -35px;
-      height: 64vh;
+      /* height: 64vh; */
       page-break-after: always;
   }
 }
@@ -713,7 +712,7 @@ pre code {
 @media (min-width: 1300px) {
   .m-portada {
       padding-top: 10px;
-      height: 65vh;
+      /* height: 42vh; */
       background-color: #7cc7d6;
       padding: 0rem 9rem 1rem 7rem;
   }
@@ -733,7 +732,7 @@ pre code {
 @media (min-width: 1400px) {
   .m-portada {
     padding-top: 150px;
-    height: 45vh;
+    /* height: 45vh; */
     background-color: #7cc7d6;
     padding: 7rem 9rem 1rem 7rem;
     
@@ -2601,8 +2600,8 @@ textarea.form-control {
   margin-left: -1.25rem;
 }
 .words {
- color: #7cc7d6;
-  font-weight: 500;
+ color: #3e3e3e;
+  font-weight: 600;
 }
 .form-check-input:disabled ~ .form-check-label {
   color: #6c757d;
@@ -12091,15 +12090,55 @@ button:focus {
   color: #495057!important
 }
 #sub20 {
-    font-size: 22px;
-    color: #7cc7d6!important;
+    font-size: 26px;
+    color: #3e3e3e!important;
     font-weight: 600;
+    margin-top: 2rem;
 }
 
+
+#sub22 {
+    margin-top: 2rem;
+}
+
+#sub23 {
+    margin-top: 2rem;
+}
+#sub24 {
+    margin-top: 2rem;
+}
+
+#sub25 {
+    margin-top: 2rem;
+}
+
+#sub26 {
+    margin-top: 2rem;
+}
+
+#sub27 {
+    margin-top: 2rem;
+}
+
+
+#sub28 {
+    margin-top: 2rem;
+}
+
+
+.sub-numbers{
+  font-size: 18px!important;
+
+}
+#sub10 {
+   font-size: 22px;
+    color:#3e3e3e!important;
+}
 .titulo5 b
 {
+  font-size: 36px;
   line-height: 1.5;
-  color: #9b9c9d;
+  color:#3e3e3e;
   font-family: "Lexend Deca", sans-serif;
 }
 .ftco-section {

@@ -44,7 +44,7 @@ samp {
 }
 
 .sub-tema {
-    color: #7cc7d6;
+    color:#333233;
     font-size: 23px;
 }
 
@@ -201,7 +201,7 @@ samp {
   padding-left: 3px;
 }
 .contenedor-texto {
-    padding: 3rem 2rem 2rem 1rem;
+    padding: 0rem 2rem 2rem 1rem;
 }
 @media (max-width: 576px) {
   .contenedor-texto {

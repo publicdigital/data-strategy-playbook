@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/sty.css">
     <link rel="stylesheet" href="style_two.css">
-    <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <script src="js/html2pdf.bundle.min.js"></script>
     <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
@@ -60,6 +60,10 @@
             <a class="nav-item nav-link" href="index.html"
               >Introducción <span class="sr-only">(current)</span></a
             >
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="guia.html"
+              >La Guía</a>
           </li>
           <li class="nav-item">
             <a class="nav-item nav-link" href="usar-guia.html"
@@ -117,49 +121,56 @@
               </div>
               <hr>
 
+              <div class="row" style="justify-content: end;">
+              
+                <div class="col-md-5 col-12">
+                  <div class="tablero">
+                    <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
+                    <span class="badge badge-primary">Nulo</span>
+                    <span class="badge badge-secondary">Bajo</span>
+                    <span class="badge badge-success">Medio</span>
+                    <span class="badge badge-danger">Alto</span>
+                  </div>
+                </div>
+              </div>
+
               <div class="box">
 
                 <div class="boxg-1">
                   <!-- step 1 -->
                   <div class="step-box p-0" id="step-box-1">
                     <div class="somee pt-2">
+                      <span>CONDICIÓN 1/8</span>
                       <h5 id="sub20"><b> 1. Liderazgo </b></h5>
                       <p class="">
                        Se refiere a la existencia de un compromiso político de alto nivel y una estrategia de datos anunciada desde un instrumento que permee de manera transversal a todas las instituciones de gobierno.
                       </p>
                     </div>
-                    <div class="text-left col-12 p-0">
-                         <span class="pr-3" style="color:rgb(72, 71, 71); font-weight: 500;"> CONDICIÓN 1/8</span>
-                     
-                      <div class="tablero">
-                        <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
-                        <span class="badge badge-primary">Nulo</span>
-                        <span class="badge badge-secondary">Bajo</span>
-                        <span class="badge badge-success">Medio</span>
-                        <span class="badge badge-danger">Alto</span>
-                      </div>
-                    <div class="div p-3">
-                    <h5 class="text-left t-question"> ¿Existe un compromiso político de alto nivel para la construcción de una estrategia integral de datos?</h5>
-                      <div class="text-left mt-4">
-                          <div class="style-question radio-op1">
-                              <input type="radio" id="q1-1" name="modulo1-q1" value="1">
-                              <label for="q1-1">No existe</label><br>
-                          </div>
-                          <div class="style-question radio-op2">
-                              <input type="radio" id="q1-2" name="modulo1-q1" value="2">
-                              <label for="q1-2">Declaraciones públicas del Jefe del Ejecutivo o a nivel Ministerial</label><br>
-                          </div>
-                          <div class="style-question radio-op3">
-                              <input type="radio" id="q1-3" name="modulo1-q1" value="3">
-                              <label for="q1-3">Compromiso en el Plan de Desarrollo, Estrategia Digital o Compromiso público internacional</label>
-                          </div>
-                          <div class="style-question radio-op4">
-                              <input type="radio" id="q1-4" name="modulo1-q1" value="4">
-                              <label for="q1-4">Decreto Presidencial o Proyecto/Iniciativa de Ley </label>
-                          </div>
 
+                    <div class="text-left col-12 p-0">
+                    
+                      <div class="div p-3">
+                        <h5 class="text-left t-question"> ¿Existe un compromiso político de alto nivel para la construcción de una estrategia integral de datos?</h5>
+                          <div class="text-left mt-4">
+                            <div class="style-question radio-op1">
+                                <input type="radio" id="q1-1" name="modulo1-q1" value="1">
+                                <label for="q1-1">No existe</label><br>
+                            </div>
+                            <div class="style-question radio-op2">
+                                <input type="radio" id="q1-2" name="modulo1-q1" value="2">
+                                <label for="q1-2">Declaraciones públicas del Jefe del Ejecutivo o a nivel Ministerial</label><br>
+                            </div>
+                            <div class="style-question radio-op3">
+                                <input type="radio" id="q1-3" name="modulo1-q1" value="3">
+                                <label for="q1-3">Compromiso en el Plan de Desarrollo, Estrategia Digital o Compromiso público internacional</label>
+                            </div>
+                            <div class="style-question radio-op4">
+                                <input type="radio" id="q1-4" name="modulo1-q1" value="4">
+                                <label for="q1-4">Decreto Presidencial o Proyecto/Iniciativa de Ley </label>
+                            </div>
+
+                          </div>
                       </div>
-                    </div>
                     </div>
                   </div>
               
@@ -212,7 +223,7 @@
 
                             <a href="#sub22"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-1 ml-1">Siguiente</button></a>
                             
-                            <!-- <a href="#step-box-2"><button type="button" class="btn float-right mt-4 btn-style btn-back-2"><i class="fas fa-chevron-left"></i></button></a> -->
+                            <!-- <a href="#step-box-2"><button type="button" class="btn float-right mt-4 btn-style btn-back-2"><i class="bx bx-chevron-left icon-n"></i></button></a> -->
                           </div>
                       </div>
                   </div>
@@ -224,6 +235,7 @@
                 <!-- step 4 -->
                 <div class="step-box4 p-0" id="step-box-4" >
                   <div class="somee pt-2">
+                     <span>CONDICIÓN 2/8</span>
                       <h5 id="sub22"><b> 2. Financiamiento </b> </h5>
                     <p class="">
                         La existencia de una estrategia de sostenibilidad financiera que incluya presupuesto
@@ -233,14 +245,8 @@
                     </p>
                   </div>
                   <div class="text-left col-md-12">
-                    <span>CONDICIÓN 2/8</span>
-                    <div class="tablero">
-                      <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
-                      <span class="badge badge-primary">Nulo</span>
-                      <span class="badge badge-secondary">Bajo</span>
-                      <span class="badge badge-success">Medio</span>
-                      <span class="badge badge-danger">Alto</span>
-                    </div>
+                    
+                    
                     <h5 class="text-left t-question">2.1 ¿Existe un presupuesto asignado a una estrategia de datos? ¿Este presupuesto incluye fondos para promover el uso dentro y fuera de gobierno (Ej, desarrollo de herramientas, capacitación a usuarios)?</h5>
                     <div class="text-left mt-4">
                       <div class="style-question radio-op1">
@@ -325,7 +331,7 @@
                   
 
                         <a href="#sub23"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-2 ml-1">Siguiente</button></a>
-                        <a href="#sub20"><button type="button" class="btn float-right mt-4 btn-style btn-back-5"><i class="fas fa-chevron-left"></i></button></a>
+                        <a href="#sub20"><button type="button" class="btn float-right mt-4 btn-style btn-back-5"><i class="bx bx-chevron-left icon-n"></i></button></a>
                       </div>
                    </div>
                 </div>
@@ -338,20 +344,15 @@
                 <!-- step 7 -->
                 <div class="step-box7 p-0 " id="step-box-7" >
                   <div class="somee pt-2">
+                     <span>CONDICIÓN 3/8</span>
                       <h5 id="sub23"><b>3. Marco normativo y legislativo </b></h5>
                     <p class="">
                       Se refiere a la existencia de una capa mínima de normativa, leyes, y/o regulaciones que no solamente tengan que ver con el ciclo de vida de los datos, sino con la existencia de conceptos que habilitan y controlan su aprovechamiento.
                     </p>
                   </div>
                   <div class="text-left col-md-12">
-                    <span>CONDICIÓN 3/8</span>
-                    <div class="tablero">
-                      <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
-                      <span class="badge badge-primary">Nulo</span>
-                      <span class="badge badge-secondary">Bajo</span>
-                      <span class="badge badge-success">Medio</span>
-                      <span class="badge badge-danger">Alto</span>
-                    </div>
+                   
+
                     <h5 class="text-left t-question">3.1 ¿Existe una política o instrumento normativo sobre transparencia y/o acceso a la Información? </h5>
                     <div class="text-left mt-4">
                       <div class="style-question radio-op1">
@@ -593,7 +594,7 @@
 
                         
                         <a href="#sub24"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-3 ml-1">Siguiente</button></a>
-                        <a href="#sub22"><button type="button" class="btn float-right mt-4 btn-style btn-back-14"><i class="fas fa-chevron-left"></i></button></a>
+                        <a href="#sub22"><button type="button" class="btn float-right mt-4 btn-style btn-back-14"><i class="bx bx-chevron-left icon-n"></i></button></a>
                     </div>
                   </div>
                 </div>
@@ -605,20 +606,14 @@
                  <!-- step  16 -->
                   <div class="step-box16 p-0" id="step-box-16" >
                     <div class="somee pt-2">
+                       <span>CONDICIÓN 4/8</span>
                         <h5 id="sub24"><b>4. Estructura organizacional y competencias institucionales </b></h5>
                       <p class="">
                         Se refiere a la existencia de una oficina o equipo con atribuciones y experiencia para diseñar e implementar políticas de datos en coordinación con otras áreas de gobierno. También nos referimos a los roles existentes dentro de cada Ministerio/Institución con responsabilidades y conocimientos en la gestión de datos.
                       </p>
                     </div>
                     <div class="text-left col-md-12">
-                      <span>CONDICIÓN 4/8</span>
-                      <div class="tablero">
-                        <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
-                        <span class="badge badge-primary">Nulo</span>
-                        <span class="badge badge-secondary">Bajo</span>
-                        <span class="badge badge-success">Medio</span>
-                        <span class="badge badge-danger">Alto</span>
-                      </div>
+                      
                       <h5 class="text-left t-question">4.1 ¿Existe un equipo multidisciplinario o área dentro del gobierno encargado del diseño, implementación y evaluación de una estrategia de datos? </h5>
                       <div class="text-left mt-4">
                         <div class="style-question radio-op1">
@@ -757,7 +752,7 @@
 
                           
                           <a href="#sub25"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-4 ml-1">Siguiente</button></a>
-                          <a href="#step-box-19"><button type="button" class="btn float-right mt-4 btn-style btn-back-19"><i class="fas fa-chevron-left"></i></button></a>
+                          <a href="#step-box-19"><button type="button" class="btn float-right mt-4 btn-style btn-back-19"><i class="bx bx-chevron-left icon-n"></i></button></a>
                       </div>
                     </div>
                   </div>
@@ -770,20 +765,15 @@
                 <!-- step  21 -->
                 <div class="step-box21 p-0 " id="step-box-21" >
                   <div class="somee pt-2">
+                     <span>CONDICIÓN 5/8</span>
                     <h5 id="sub25"><b> 5. Datos: Recolección, uso, almacenamiento y distribución </b></h5>
                     <p class="">
                       Se refiere a todos los activos de datos con los que cuenta el gobierno y su ciclo de vida. La existencia de un catálogo/inventario general de datos, clasificación oficial de los datos en el país o repositorio con datos ya disponibles para su uso y reutilización. 
                     </p>
                   </div>
                   <div class="text-left col-md-12">
-                  <span>CONDICIÓN 5/8</span>
-                  <div class="tablero">
-                    <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
-                    <span class="badge badge-primary">Nulo</span>
-                    <span class="badge badge-secondary">Bajo</span>
-                    <span class="badge badge-success">Medio</span>
-                    <span class="badge badge-danger">Alto</span>
-                  </div>
+             
+                 
                   <h5 class="text-left t-question">5.1 ¿Existe un inventario de datos que integre todos los tipos de datos que genera el gobierno?¿Este inventario contiene los metadatos documentados de acuerdo a algún estándar?</h5>
                   <div class="text-left mt-4">
                     <div class="style-question radio-op1">
@@ -988,7 +978,7 @@
                             <label for="q28-4">Existe una estrategia impulsada desde el gobierno para el uso de datos en el proceso de diseño, implementación y evaluación de políticas públicas. </label>
                         </div>
                         <!-- <a href="#sub26"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-5 ml-1">Siguiente</button></a>
-                        <a href="#step-box-27"><button type="button" class="btn float-right mt-4 btn-style btn-back-27"><i class="fas fa-chevron-left"></i></button></a> -->
+                        <a href="#step-box-27"><button type="button" class="btn float-right mt-4 btn-style btn-back-27"><i class="bx bx-chevron-left icon-n"></i></button></a> -->
                       </div>
                     </div>
                   </div>
@@ -1022,7 +1012,7 @@
                             </div>
                         </div> -->
                       <a href="#sub26"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-5 ml-1">Siguiente</button></a>
-                      <a href="#step-box-27"><button type="button" class="btn float-right mt-4 btn-style btn-back-27"><i class="fas fa-chevron-left"></i></button></a>
+                      <a href="#step-box-27"><button type="button" class="btn float-right mt-4 btn-style btn-back-27"><i class="bx bx-chevron-left icon-n"></i></button></a>
                     </div>
                   </div>
                   
@@ -1035,20 +1025,15 @@
                 <!-- step  29 -->
                 <div class="step-box29 p-0 " id="step-box-29" >
                     <div class="somee pt-2">
+                       <span>CONDICIÓN 6/8</span>
                       <h5 id="sub26"><b> 6. Construcción de capacidades  </b></h5>
                     <p class="">
                       Se refiere a la existencia de programas de capacitación para servidores públicos relacionados con el ciclo de vida de los datos, tipos de datos, estándares, análisis de datos, etc. Vinculación con el sector académico u otras organizaciones para proveer estos servicios dentro y fuera del gobierno.
                     </p>
                   </div>
                   <div class="text-left col-md-12">
-                  <span>CONDICIÓN 6/8</span>
-                  <div class="tablero">
-                    <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
-                    <span class="badge badge-primary">Nulo</span>
-                    <span class="badge badge-secondary">Bajo</span>
-                    <span class="badge badge-success">Medio</span>
-                    <span class="badge badge-danger">Alto</span>
-                  </div>
+                  
+              
                   <h5 class="text-left t-question">6.1 ¿Se han tomado cursos de capacitación dirigidos a personas servidoras públicas sobre temas de gestión y uso de datos?</h5>
                   <div class="text-left mt-4">
                     <div class="style-question radio-op1">
@@ -1127,7 +1112,7 @@
                         </div> -->
                          
                           <a href="#sub27"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-6 ml-1">Siguiente</button></a>
-                          <a href="#step-box-30"><button type="button" class="btn float-right mt-4 btn-style btn-back-30"><i class="fas fa-chevron-left"></i></button></a>
+                          <a href="#step-box-30"><button type="button" class="btn float-right mt-4 btn-style btn-back-30"><i class="bx bx-chevron-left icon-n"></i></button></a>
                         </div>
                       </div>
                 </div>
@@ -1139,20 +1124,15 @@
                 <!-- step  32 -->
                 <div class="step-box32 p-0" id="step-box-32" >
                   <div class="somee pt-2">
+                     <span>CONDICIÓN 7/8</span>
                       <h5 id="sub27"><b> 7. Demanda y comunidad de usuarios </b></h5>
                     <p class="">
                      Se refiere a la existencia de un mapeo de usuarios activos y necesidades de datos fuera del gobierno. Mecanismos institucionalizados de diálogo permanente con actores de sociedad civil, industria. etc. Capacidades técnicas de los usuarios. Interacción digital entre ciudadanos y gobierno.
                     </p>
                   </div>
                   <div class="text-left col-md-12">
-                    <span>CONDICIÓN 7/8</span>
-                    <div class="tablero">
-                      <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
-                      <span class="badge badge-primary">Nulo</span>
-                      <span class="badge badge-secondary">Bajo</span>
-                      <span class="badge badge-success">Medio</span>
-                      <span class="badge badge-danger">Alto</span>
-                    </div>
+                   
+                
                     <h5 class="text-left t-question">7.1 ¿Existe un mecanismo de diálogo y coordinación con sociedad civil, sector privado y academia respecto a proyectos de datos?</h5>
                     <div class="text-left mt-4">
                       <div class="style-question radio-op1">
@@ -1258,7 +1238,7 @@
                         </div> -->
                           
                             <a href="#sub28"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-7 ml-1">Siguiente</button></a>
-                            <a href="#sub26"><button type="button" class="btn float-right mt-4 btn-style btn-back-34"><i class="fas fa-chevron-left"></i></button></a>
+                            <a href="#sub26"><button type="button" class="btn float-right mt-4 btn-style btn-back-34"><i class="bx bx-chevron-left icon-n"></i></button></a>
                           </div>
                         </div>
                 </div>
@@ -1271,20 +1251,15 @@
                 <!-- step  36 -->
                 <div class="step-box36 p-0" id="step-box-36" >
                   <div class="somee pt-2">
+                     <span>CONDICIÓN 8/8</span>
                       <h5 id="sub28"><b> 8. Tecnología y mecanismos de transferencia  </b> </h5>
                     <p class="">
                       La existencia de políticas o estrategias nacionales de TICs que contengan las condiciones mínimas para el almacenamiento, transformación seguridad y transferencia de datos entre actores de distintos sectores.
                     </p>
                   </div>
                   <div class="text-left col-md-12">
-                    <span>CONDICIÓN 8/8</span>
-                    <div class="tablero">
-                      <p>Nivel de la condición: <i class="fas fa-arrow-right" style="font-size: 12px;"></i> </p>
-                      <span class="badge badge-primary">Nulo</span>
-                      <span class="badge badge-secondary">Bajo</span>
-                      <span class="badge badge-success">Medio</span>
-                      <span class="badge badge-danger">Alto</span>
-                    </div>
+                   
+                 
                     <h5 class="text-left t-question">8.1 ¿Existe un catálogo público o privado  para el acceso y consumo masivo (bulk) a  fuentes de datos  por medio de APIs? ¿Estas son utilizadas solo por el gobierno mismo o son abiertas a otros actores?</h5>
                     <div class="text-left mt-4">
                       <div class="style-question radio-op1">
@@ -1392,7 +1367,7 @@
                                       
                          
                           <a href="#step-box-resultado-8"><button type="button" class="btn float-right mt-4 btn-style btn-resultado-8 ml-1">Resultado</button></a>
-                          <a href="#step-box-39"><button type="button" class="btn float-right mt-4 btn-style btn-back-39"><i class="fas fa-chevron-left"></i></button></a>
+                          <a href="#step-box-39"><button type="button" class="btn float-right mt-4 btn-style btn-back-39"><i class="bx bx-chevron-left icon-n"></i></button></a>
                         </div>
                       </div>
                 </div>
@@ -1407,7 +1382,7 @@
                     <div class="style-r mb-3" > 
                       <h5 class="text-left"> <i class="fas fa-arrow-right"></i> Resultado final dimensiones 8/8</h5>
                     </div>
-                    <button type="button" id="btnCrearPdf" class="btn float-right btn-style-nav ml-1 btn-pdf mb-3 btnCrearPdf"> Descargar Resultados <i class="fa-solid fa-file-arrow-down"></i></button>
+                    <button type="button" id="btnCrearPdf" class="btn float-right btn-style-nav ml-1 btn-pdf mb-3 btnCrearPdf"> Descargar Resultados <i class="bx bx-printer"></i></button>
                     <a href="#step-box"><button type="button" class="btn float-right  btn-style step-box-inicio mb-3  ml-1">Volver</button></a>
                     
                     <table class="table table-bordered"  id="result">
@@ -2014,7 +1989,7 @@
 
                           <a href="#result">
                             <button type="button" class="btn float-left btn-back  mb-3  ml-1">
-                              <i class="fas fa-chevron-left"></i> Volver
+                              <i class="bx bx-chevron-left icon-n"></i> Volver
                             </button>
                           </a>
                             
@@ -2158,7 +2133,7 @@
 
                           <a href="#result">
                             <button type="button" class="btn float-left btn-back  mb-3  ml-1">
-                              <i class="fas fa-chevron-left"></i> Volver
+                              <i class="bx bx-chevron-left icon-n"></i> Volver
                             </button>
                           </a>
                             
@@ -2382,7 +2357,7 @@
 
                           <a href="#result">
                             <button type="button" class="btn float-left btn-back  mb-3  ml-1">
-                              <i class="fas fa-chevron-left"></i> Volver
+                              <i class="bx bx-chevron-left icon-n"></i> Volver
                             </button>
                           </a>
 
@@ -2564,7 +2539,7 @@
 
                           <a href="#result">
                             <button type="button" class="btn float-left btn-back  mb-3  ml-1">
-                              <i class="fas fa-chevron-left"></i> Volver
+                              <i class="bx bx-chevron-left icon-n"></i> Volver
                             </button>
                           </a>
                             
@@ -2761,7 +2736,7 @@
 
                           <a href="#result">
                             <button type="button" class="btn float-left btn-back  mb-3  ml-1">
-                              <i class="fas fa-chevron-left"></i> Volver
+                              <i class="bx bx-chevron-left icon-n"></i> Volver
                             </button>
                           </a>
 
@@ -2928,7 +2903,7 @@
 
                           <a href="#result">
                             <button type="button" class="btn float-left btn-back  mb-3  ml-1">
-                              <i class="fas fa-chevron-left"></i> Volver
+                              <i class="bx bx-chevron-left icon-n"></i> Volver
                             </button>
                           </a>
 
@@ -3123,7 +3098,7 @@
 
                           <a href="#result">
                             <button type="button" class="btn float-left btn-back  mb-3  ml-1">
-                              <i class="fas fa-chevron-left"></i> Volver
+                              <i class="bx bx-chevron-left icon-n"></i> Volver
                             </button>
                           </a>
                           <br>
@@ -3284,7 +3259,7 @@
 
                           <a href="#result">
                             <button type="button" class="btn float-left btn-back  mb-3  ml-1">
-                              <i class="fas fa-chevron-left"></i> Volver
+                              <i class="bx bx-chevron-left icon-n"></i> Volver
                             </button>
                           </a>
 
@@ -3456,7 +3431,7 @@
 
                           <a href="#result">
                             <button type="button" class="btn float-left btn-back  mb-3  ml-1">
-                              <i class="fas fa-chevron-left"></i> Volver
+                              <i class="bx bx-chevron-left icon-n"></i> Volver
                             </button>
                           </a>
 
@@ -3628,7 +3603,7 @@
 
                           <a href="#result">
                             <button type="button" class="btn float-left btn-back  mb-3  ml-1">
-                              <i class="fas fa-chevron-left"></i> Volver
+                              <i class="bx bx-chevron-left icon-n"></i> Volver
                             </button>
                           </a>
 
