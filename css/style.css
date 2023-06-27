@@ -9333,6 +9333,7 @@ button.bg-dark:focus {
    
     
 }
+
 /* BOTON IDIOMA */
 .in{
   color:white;
@@ -9349,7 +9350,7 @@ button.bg-dark:focus {
   position:absolute;
   width: 50px;
   height: 25px;
-  background: #7cc7d6;
+  background: var(--gray);
 
   border-radius: 25px;
 }
@@ -9372,7 +9373,7 @@ button.bg-dark:focus {
 }
 
 .check:checked:before{
-  background:#7cc7d6;
+  background:var(--gray)
 
 }
 
@@ -12462,6 +12463,10 @@ background-color: #333233 !important;
     display: block;
     text-align: center;
   } */
+}
+.image-pdf-3 {
+    width: 80px;
+    /* height: 50px; */
 }
 
 
